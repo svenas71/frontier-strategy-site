@@ -66,7 +66,9 @@
 </section>
 
 
-<!-- Frontier Signals: 3-up auto-advancing carousel -->
+
+
+<!-- Frontier Signals: responsive auto-advancing carousel (1/2/3-up) -->
 <section id="signals" class="mx-auto max-w-6xl px-4 py-16">
   <div class="flex items-end justify-between">
     <h2 class="text-2xl md:text-3xl font-semibold">Frontier Signals</h2>
@@ -74,140 +76,164 @@
   </div>
 
   
-  
-
-  
   <style>[x-cloak]{display:none!important}</style>
 
-  <div x-data="carousel3({ total: 7 })" x-init="start()" class="mt-6">
-  <!-- viewport -->
-  <div class="relative overflow-hidden">
-    <!-- track -->
-    <div class="flex -mx-3 transition-transform duration-700 will-change-transform" :style="translate">
-      
-        <article class="w-1/3 shrink-0 px-3 py-4">
-          <div class="h-full rounded-2xl border bg-white p-6 shadow-sm">
-            <h3 class="font-semibold text-base">
-              <a href="/signals/why-upstream-matters/" class="hover:underline">Why Upstream Matters</a>
-            </h3>
-            
-              <p class="mt-2 text-sm text-slate-600">Chromatin remodellers, not transcription factors, may hold the real keys to gene control.</p>
-            
-            <p class="mt-4"><a class="text-sm underline" href="/signals/why-upstream-matters/">Read →</a></p>
-          </div>
-        </article>
-      
-        <article class="w-1/3 shrink-0 px-3 py-4">
-          <div class="h-full rounded-2xl border bg-white p-6 shadow-sm">
-            <h3 class="font-semibold text-base">
-              <a href="/signals/costly-assumptions/" class="hover:underline">Costly Assumptions</a>
-            </h3>
-            
-              <p class="mt-2 text-sm text-slate-600">Drug discovery gone wrong: when linear thinking meets a folded genome.</p>
-            
-            <p class="mt-4"><a class="text-sm underline" href="/signals/costly-assumptions/">Read →</a></p>
-          </div>
-        </article>
-      
-        <article class="w-1/3 shrink-0 px-3 py-4">
-          <div class="h-full rounded-2xl border bg-white p-6 shadow-sm">
-            <h3 class="font-semibold text-base">
-              <a href="/signals/confessions-of-a-molecular-biologist/" class="hover:underline">Confessions of a Molecular Biologist</a>
-            </h3>
-            
-              <p class="mt-2 text-sm text-slate-600">Molecular interactions built modern biology; quantum dynamics could reshape its future.</p>
-            
-            <p class="mt-4"><a class="text-sm underline" href="/signals/confessions-of-a-molecular-biologist/">Read →</a></p>
-          </div>
-        </article>
-      
-        <article class="w-1/3 shrink-0 px-3 py-4">
-          <div class="h-full rounded-2xl border bg-white p-6 shadow-sm">
-            <h3 class="font-semibold text-base">
-              <a href="/signals/the-future-of-research-must-be-built/" class="hover:underline">The Future of Research</a>
-            </h3>
-            
-              <p class="mt-2 text-sm text-slate-600">We can’t build the future of science on disposable careers.</p>
-            
-            <p class="mt-4"><a class="text-sm underline" href="/signals/the-future-of-research-must-be-built/">Read →</a></p>
-          </div>
-        </article>
-      
-        <article class="w-1/3 shrink-0 px-3 py-4">
-          <div class="h-full rounded-2xl border bg-white p-6 shadow-sm">
-            <h3 class="font-semibold text-base">
-              <a href="/signals/what-is-health-part-one/" class="hover:underline">What is Health - Part One</a>
-            </h3>
-            
-              <p class="mt-2 text-sm text-slate-600">AI won’t fix medicine if we’re still asking 19th-century questions</p>
-            
-            <p class="mt-4"><a class="text-sm underline" href="/signals/what-is-health-part-one/">Read →</a></p>
-          </div>
-        </article>
-      
-        <article class="w-1/3 shrink-0 px-3 py-4">
-          <div class="h-full rounded-2xl border bg-white p-6 shadow-sm">
-            <h3 class="font-semibold text-base">
-              <a href="/signals/ozempic-a-case-study-in-hybris/" class="hover:underline">Ozempic: A Case Study in Hybris</a>
-            </h3>
-            
-              <p class="mt-2 text-sm text-slate-600">Pharma clings to simple causalities — at the expense of our health.</p>
-            
-            <p class="mt-4"><a class="text-sm underline" href="/signals/ozempic-a-case-study-in-hybris/">Read →</a></p>
-          </div>
-        </article>
-      
-        <article class="w-1/3 shrink-0 px-3 py-4">
-          <div class="h-full rounded-2xl border bg-white p-6 shadow-sm">
-            <h3 class="font-semibold text-base">
-              <a href="/signals/what-llms-will-teach-us-about-the/" class="hover:underline">What LLMs will teach us about the Mind</a>
-            </h3>
-            
-              <p class="mt-2 text-sm text-slate-600">Beyond chat: LLMs are our first toolbox for cognition</p>
-            
-            <p class="mt-4"><a class="text-sm underline" href="/signals/what-llms-will-teach-us-about-the/">Read →</a></p>
-          </div>
-        </article>
-      
+  <div x-data="carouselResponsive({ total: 7 })" x-init="start()" class="mt-6 select-none">
+    <!-- viewport -->
+    <div class="relative overflow-hidden rounded-2xl">
+      <!-- track -->
+      <div class="track flex -mx-3 transition-transform duration-700 will-change-transform touch-pan-y" :style="translate">
+        
+          <article class="w-full sm:w-1/2 md:w-1/3 shrink-0 px-3 py-4">
+            <div class="h-full rounded-2xl border bg-white p-6 shadow-sm">
+              <h3 class="font-semibold text-base">
+                <a href="/signals/why-upstream-matters/" class="hover:underline">Why Upstream Matters</a>
+              </h3>
+              
+                <p class="mt-2 text-sm text-slate-600">Chromatin remodellers, not transcription factors, may hold the real keys to gene control.</p>
+              
+              <p class="mt-4"><a class="text-sm underline" href="/signals/why-upstream-matters/">Read →</a></p>
+            </div>
+          </article>
+        
+          <article class="w-full sm:w-1/2 md:w-1/3 shrink-0 px-3 py-4">
+            <div class="h-full rounded-2xl border bg-white p-6 shadow-sm">
+              <h3 class="font-semibold text-base">
+                <a href="/signals/costly-assumptions/" class="hover:underline">Costly Assumptions</a>
+              </h3>
+              
+                <p class="mt-2 text-sm text-slate-600">Drug discovery gone wrong: when linear thinking meets a folded genome.</p>
+              
+              <p class="mt-4"><a class="text-sm underline" href="/signals/costly-assumptions/">Read →</a></p>
+            </div>
+          </article>
+        
+          <article class="w-full sm:w-1/2 md:w-1/3 shrink-0 px-3 py-4">
+            <div class="h-full rounded-2xl border bg-white p-6 shadow-sm">
+              <h3 class="font-semibold text-base">
+                <a href="/signals/confessions-of-a-molecular-biologist/" class="hover:underline">Confessions of a Molecular Biologist</a>
+              </h3>
+              
+                <p class="mt-2 text-sm text-slate-600">Molecular interactions built modern biology; quantum dynamics could reshape its future.</p>
+              
+              <p class="mt-4"><a class="text-sm underline" href="/signals/confessions-of-a-molecular-biologist/">Read →</a></p>
+            </div>
+          </article>
+        
+          <article class="w-full sm:w-1/2 md:w-1/3 shrink-0 px-3 py-4">
+            <div class="h-full rounded-2xl border bg-white p-6 shadow-sm">
+              <h3 class="font-semibold text-base">
+                <a href="/signals/the-future-of-research-must-be-built/" class="hover:underline">The Future of Research</a>
+              </h3>
+              
+                <p class="mt-2 text-sm text-slate-600">We can’t build the future of science on disposable careers.</p>
+              
+              <p class="mt-4"><a class="text-sm underline" href="/signals/the-future-of-research-must-be-built/">Read →</a></p>
+            </div>
+          </article>
+        
+          <article class="w-full sm:w-1/2 md:w-1/3 shrink-0 px-3 py-4">
+            <div class="h-full rounded-2xl border bg-white p-6 shadow-sm">
+              <h3 class="font-semibold text-base">
+                <a href="/signals/what-is-health-part-one/" class="hover:underline">What is Health - Part One</a>
+              </h3>
+              
+                <p class="mt-2 text-sm text-slate-600">AI won’t fix medicine if we’re still asking 19th-century questions</p>
+              
+              <p class="mt-4"><a class="text-sm underline" href="/signals/what-is-health-part-one/">Read →</a></p>
+            </div>
+          </article>
+        
+          <article class="w-full sm:w-1/2 md:w-1/3 shrink-0 px-3 py-4">
+            <div class="h-full rounded-2xl border bg-white p-6 shadow-sm">
+              <h3 class="font-semibold text-base">
+                <a href="/signals/ozempic-a-case-study-in-hybris/" class="hover:underline">Ozempic: A Case Study in Hybris</a>
+              </h3>
+              
+                <p class="mt-2 text-sm text-slate-600">Pharma clings to simple causalities — at the expense of our health.</p>
+              
+              <p class="mt-4"><a class="text-sm underline" href="/signals/ozempic-a-case-study-in-hybris/">Read →</a></p>
+            </div>
+          </article>
+        
+          <article class="w-full sm:w-1/2 md:w-1/3 shrink-0 px-3 py-4">
+            <div class="h-full rounded-2xl border bg-white p-6 shadow-sm">
+              <h3 class="font-semibold text-base">
+                <a href="/signals/what-llms-will-teach-us-about-the/" class="hover:underline">What LLMs will teach us about the Mind</a>
+              </h3>
+              
+                <p class="mt-2 text-sm text-slate-600">Beyond chat: LLMs are our first toolbox for cognition</p>
+              
+              <p class="mt-4"><a class="text-sm underline" href="/signals/what-llms-will-teach-us-about-the/">Read →</a></p>
+            </div>
+          </article>
+        
+      </div>
+    </div>
+
+    <!-- controls -->
+    <div class="flex justify-center items-center gap-4 mt-4">
+      <button @click="prev" class="text-sm leading-none" aria-label="Previous">←</button>
+      <div class="flex items-center gap-2">
+        <template x-for="i in (total - visible + 1)">
+          <button class="w-2 h-2 rounded-full"
+            :class="active === (i-1) ? 'bg-black' : 'bg-slate-300'"
+            @click="go(i-1)"></button>
+        </template>
+      </div>
+      <button @click="next" class="text-sm leading-none" aria-label="Next">→</button>
     </div>
   </div>
-
-  <!-- controls: arrows + dots -->
-  <div class="flex justify-center items-center gap-4 mt-4">
-    <button @click="prev" class="text-sm leading-none">←</button>
-    <div class="flex items-center gap-2">
-      <template x-for="i in total - 2">
-        <button class="w-2 h-2 rounded-full"
-          :class="active === (i-1) ? 'bg-black' : 'bg-slate-300'"
-          @click="go(i-1)"></button>
-      </template>
-    </div>
-    <button @click="next" class="text-sm leading-none">→</button>
-  </div>
-</div>
-
   
 </section>
 
-<!-- Alpine helper for a 3-up carousel -->
+<!-- Inline Alpine helper (scoped) -->
 <script>
-  function carousel3({ total }) {
+  function carouselResponsive({ total }) {
     return {
-      active: 0, // leftmost visible index
       total,
+      visible: 1,        // will be set by breakpoints
+      active: 0,         // leftmost visible index
       translate: 'transform: translateX(0%)',
-      step() { return 100/3 }, // each card is 33.333% of viewport
-      clamp() { if (this.active > this.total - 3) this.active = 0; if (this.active < 0) this.active = this.total - 3; },
+      resizeHandler: null,
+      timer: null,
+      step() { return 100 / this.visible }, // % width per card
+      clamp() {
+        if (this.active > this.total - this.visible) this.active = 0;
+        if (this.active < 0) this.active = Math.max(0, this.total - this.visible);
+      },
       update() { this.translate = `transform: translateX(-${this.active * this.step()}%)`; },
       next() { this.active++; this.clamp(); this.update(); },
       prev() { this.active--; this.clamp(); this.update(); },
       go(i) { this.active = i; this.update(); },
-      start() { this.update(); setInterval(() => this.next(), 10000); }
+      setVisibleByBP() {
+        if (window.matchMedia('(min-width: 768px)').matches) this.visible = 3;      // md
+        else if (window.matchMedia('(min-width: 640px)').matches) this.visible = 2; // sm
+        else this.visible = 1;
+        this.clamp(); this.update();
+      },
+      start() {
+        this.setVisibleByBP();
+        this.resizeHandler = () => this.setVisibleByBP();
+        window.addEventListener('resize', this.resizeHandler, { passive: true });
+
+        // auto-advance every 15s
+        this.timer = setInterval(() => this.next(), 15000);
+
+        // basic swipe support (scoped to this component)
+        let startX = null;
+        const track = this.$root.querySelector('.track');
+        track.addEventListener('pointerdown', e => { startX = e.clientX; track.setPointerCapture(e.pointerId); });
+        track.addEventListener('pointerup', e => {
+          if (startX == null) return;
+          const dx = e.clientX - startX;
+          startX = null;
+          if (Math.abs(dx) > 40) { dx < 0 ? this.next() : this.prev(); }
+        });
+      }
     }
   }
 </script>
-
-
 
 <!-- Services (auto from Markdown files tagged "service") -->
 <section id="services" class="mx-auto max-w-6xl px-4 py-16">
@@ -261,36 +287,36 @@
     </div>
 
     <div class="mt-6 grid md:grid-cols-3 gap-6">
-    
-    
       
-      <article class="rounded-2xl border bg-white p-6">
-         <h3 class="font-semibold text-base">
-          <a href="/work/grant-writing/" class="hover:underline">Royal Society Conference on Chromosome Dynamics</a>
-        </h3>
-        
-          <p class="mt-2 text-sm text-slate-600">Convened 20 leading scientists across modelling &amp; experimentation, seeding new collaborations in genome architecture.</p>
-        
-        <p class="mt-4"><a class="text-sm underline" href="/work/grant-writing/">Read case →</a></p>
-      </article>
       
-    
-  
-      
-      <article class="rounded-2xl border bg-white p-6">
-         <h3 class="font-semibold text-base">
-          <a href="/work/genome-architecture/" class="hover:underline">Genome Architecture → Partner Ready</a>
-        </h3>
         
-          <p class="mt-2 text-sm text-slate-600">Reframed complex biology into a partner-ready narrative; 30-account list; 5 warm intros in 8 weeks.</p>
+        <article class="rounded-2xl border bg-white p-6">
+          <h3 class="font-semibold text-base">
+            <a href="/work/grant-writing/" class="hover:underline">Royal Society Conference on Chromosome Dynamics</a>
+          </h3>
+          
+            <p class="mt-2 text-sm text-slate-600">Convened 20 leading scientists across modelling &amp; experimentation, seeding new collaborations in genome architecture.</p>
+          
+          <p class="mt-4"><a class="text-sm underline" href="/work/grant-writing/">Read case →</a></p>
+        </article>
         
-        <p class="mt-4"><a class="text-sm underline" href="/work/genome-architecture/">Read case →</a></p>
-      </article>
+        
       
-    
-  
+        
+        <article class="rounded-2xl border bg-white p-6">
+          <h3 class="font-semibold text-base">
+            <a href="/work/genome-architecture/" class="hover:underline">Genome Architecture → Partner Ready</a>
+          </h3>
+          
+            <p class="mt-2 text-sm text-slate-600">Reframed complex biology into a partner-ready narrative; 30-account list; 5 warm intros in 8 weeks.</p>
+          
+          <p class="mt-4"><a class="text-sm underline" href="/work/genome-architecture/">Read case →</a></p>
+        </article>
+        
+        
+      
 
-  
+      
     </div>
   </div>
 </section>
