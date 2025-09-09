@@ -1,30 +1,21 @@
 ---
 layout: layouts/base.njk
 title: Frontier Signals
-permalink: /signals/index.html
+permalink: /signals/
 ---
 
-<!-- Frontier Signals (auto-advancing carousel) -->
-<section id="signals" class="mx-auto max-w-6xl px-4 py-16">
-  <div class="flex items-end justify-between">
-    <h2 class="text-2xl md:text-3xl font-semibold">Frontier Signals</h2>
-    <a href="/signals/" class="text-sm underline">See all posts →</a>
-  </div>
+<section class="mx-auto max-w-6xl px-4 py-16">
+  <h1 class="text-2xl md:text-3xl font-semibold">Frontier Signals</h1>
 
-  <div
-    x-data="{ active: 0, total: {{ collections.signal | length }} }"
-    x-init="setInterval(() => { active = (active + 1) % total }, 1500)"
-    class="relative mt-6 overflow-hidden rounded-2xl border min-h-[9rem]"
-  >
+  <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
     {% for p in collections.signal | reverse %}
-      <article
-        class="absolute inset-0 p-6 bg-white transition-opacity duration-700"
-        x-show="active === {{ loop.index0 }}"
-        x-transition.opacity
-      >
-        <h3 class="font-semibold text-base">
+      <article class="rounded-2xl border bg-white p-6 h-full">
+        <h2 class="font-semibold text-base">
           <a href="{{ p.url }}" class="hover:underline">{{ p.data.title }}</a>
-        </h3>
+        </h2>
+        <p class="mt-1 text-xs text-slate-500">
+          {% if p.date %}{{ p.date | readableDate }}{% endif %}
+        </p>
         {% if p.data.summary %}
           <p class="mt-2 text-sm text-slate-600">{{ p.data.summary }}</p>
         {% endif %}
