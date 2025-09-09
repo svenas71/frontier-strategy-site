@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Frontier Signals</title>
+  <meta name="description" content="Frontier Strategy helps life science teams turn complex biology into clear strategy, partnerships, and measurable results.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+</head>
+<body class="antialiased text-slate-800">
+  <!-- Nav -->
+  <header class="sticky top-0 bg-white/80 backdrop-blur border-b">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="/" class="font-semibold">Frontier Strategy</a>
+      <nav class="hidden md:flex gap-6 text-sm">
+       <a href="/#services" class="hover:underline">Services</a>
+       <a href="/work/" class="hover:underline">Case Studies</a>
+       <a href="/signals/" class="hover:underline">Frontier Signals</a>
+       <a href="/#about" class="hover:underline">About</a>
+       <a href="/#contact" class="hover:underline">Contact</a>
+     </nav>
+      <a href="/#contact" class="inline-block rounded-xl border px-3 py-1.5 text-sm hover:bg-slate-50">Let’s talk</a>
+    </div>
+  </header>
+
+  <main>
+    
+<!-- Frontier Signals (auto-advancing carousel) -->
+<section id="signals" class="mx-auto max-w-6xl px-4 py-16">
+  <div class="flex items-end justify-between">
+    <h2 class="text-2xl md:text-3xl font-semibold">Frontier Signals</h2>
+    <a href="/signals/" class="text-sm underline">See all posts →</a>
+  </div>
+
+  <div
+    x-data="{ active: 0, total: 7 }"
+    x-init="setInterval(() => { active = (active + 1) % total }, 1500)"
+    class="relative mt-6 overflow-hidden rounded-2xl border min-h-[9rem]"
+  >
+    
+      <article
+        class="absolute inset-0 p-6 bg-white transition-opacity duration-700"
+        x-show="active === 0"
+        x-transition.opacity
+      >
+        <h3 class="font-semibold text-base">
+          <a href="/signals/why-upstream-matters/" class="hover:underline">Why Upstream Matters</a>
+        </h3>
+        
+          <p class="mt-2 text-sm text-slate-600">Chromatin remodellers, not transcription factors, may hold the real keys to gene control.</p>
+        
+        <p class="mt-4"><a class="text-sm underline" href="/signals/why-upstream-matters/">Read →</a></p>
+      </article>
+    
+      <article
+        class="absolute inset-0 p-6 bg-white transition-opacity duration-700"
+        x-show="active === 1"
+        x-transition.opacity
+      >
+        <h3 class="font-semibold text-base">
+          <a href="/signals/costly-assumptions/" class="hover:underline">Costly Assumptions</a>
+        </h3>
+        
+          <p class="mt-2 text-sm text-slate-600">Drug discovery gone wrong: when linear thinking meets a folded genome.</p>
+        
+        <p class="mt-4"><a class="text-sm underline" href="/signals/costly-assumptions/">Read →</a></p>
+      </article>
+    
+      <article
+        class="absolute inset-0 p-6 bg-white transition-opacity duration-700"
+        x-show="active === 2"
+        x-transition.opacity
+      >
+        <h3 class="font-semibold text-base">
+          <a href="/signals/confessions-of-a-molecular-biologist/" class="hover:underline">Confessions of a Molecular Biologist</a>
+        </h3>
+        
+          <p class="mt-2 text-sm text-slate-600">Molecular interactions built modern biology; quantum dynamics could reshape its future.</p>
+        
+        <p class="mt-4"><a class="text-sm underline" href="/signals/confessions-of-a-molecular-biologist/">Read →</a></p>
+      </article>
+    
+      <article
+        class="absolute inset-0 p-6 bg-white transition-opacity duration-700"
+        x-show="active === 3"
+        x-transition.opacity
+      >
+        <h3 class="font-semibold text-base">
+          <a href="/signals/the-future-of-research-must-be-built/" class="hover:underline">The Future of Research</a>
+        </h3>
+        
+          <p class="mt-2 text-sm text-slate-600">We can’t build the future of science on disposable careers.</p>
+        
+        <p class="mt-4"><a class="text-sm underline" href="/signals/the-future-of-research-must-be-built/">Read →</a></p>
+      </article>
+    
+      <article
+        class="absolute inset-0 p-6 bg-white transition-opacity duration-700"
+        x-show="active === 4"
+        x-transition.opacity
+      >
+        <h3 class="font-semibold text-base">
+          <a href="/signals/what-is-health-part-one/" class="hover:underline">What is Health - Part One</a>
+        </h3>
+        
+          <p class="mt-2 text-sm text-slate-600">AI won’t fix medicine if we’re still asking 19th-century questions</p>
+        
+        <p class="mt-4"><a class="text-sm underline" href="/signals/what-is-health-part-one/">Read →</a></p>
+      </article>
+    
+      <article
+        class="absolute inset-0 p-6 bg-white transition-opacity duration-700"
+        x-show="active === 5"
+        x-transition.opacity
+      >
+        <h3 class="font-semibold text-base">
+          <a href="/signals/ozempic-a-case-study-in-hybris/" class="hover:underline">Ozempic: A Case Study in Hybris</a>
+        </h3>
+        
+          <p class="mt-2 text-sm text-slate-600">Pharma clings to simple causalities — at the expense of our health.</p>
+        
+        <p class="mt-4"><a class="text-sm underline" href="/signals/ozempic-a-case-study-in-hybris/">Read →</a></p>
+      </article>
+    
+      <article
+        class="absolute inset-0 p-6 bg-white transition-opacity duration-700"
+        x-show="active === 6"
+        x-transition.opacity
+      >
+        <h3 class="font-semibold text-base">
+          <a href="/signals/what-llms-will-teach-us-about-the/" class="hover:underline">What LLMs will teach us about the Mind</a>
+        </h3>
+        
+          <p class="mt-2 text-sm text-slate-600">Beyond chat: LLMs are our first toolbox for cognition</p>
+        
+        <p class="mt-4"><a class="text-sm underline" href="/signals/what-llms-will-teach-us-about-the/">Read →</a></p>
+      </article>
+    
+  </div>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-xs text-slate-500 flex flex-wrap gap-4 justify-between">
+      <div>© 2025 Frontier Strategy</div>
+      <div class="flex gap-4">
+        <a href="/impressum/" class="hover:underline">Impressum</a>
+        <a href="/datenschutz/" class="hover:underline">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/alpinejs" defer></script>
+</body>
+</html>

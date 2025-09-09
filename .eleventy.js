@@ -1,10 +1,11 @@
 const MarkdownIt = require("markdown-it");
+const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
-  // Copy static assets if you add any later
+  // Passthroughs
   eleventyConfig.addPassthroughCopy({ "public": "/" });
   eleventyConfig.addPassthroughCopy({ "src/images": "images" });
-  
+
   // Shortcode: current year
   eleventyConfig.addShortcode("year", () => new Date().getFullYear());
 
@@ -31,14 +32,16 @@ module.exports = function(eleventyConfig) {
     `;
   });
 
-  // Eleventy config return
+  // Filter: readable date (e.g., "9 Sep 2025")
+  eleventyConfig.addFilter("readableDate", (value) => {
+    const d = value instanceof Date ? value : new Date(value);
+    return DateTime.fromJSDate(d, { zone: "utc" }).toFormat("d LLL yyyy");
+  });
+
+  // Eleventy directories / engines
   return {
-    dir: { 
-      input: "src", 
-      includes: "_includes", 
-      output: "_site" 
-    },
+    dir: { input: "src", includes: "_includes", output: "_site" },
     markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk"
+    htmlTemplateEngine: "njk",
   };
 };

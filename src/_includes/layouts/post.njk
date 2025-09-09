@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+---
+<article class="mx-auto max-w-3xl px-4 py-12">
+  <header>
+    <h1 class="text-3xl font-semibold">{{ title }}</h1>
+
+    {% if date %}
+      <p class="mt-2 text-sm text-slate-500">{{ page.date | readableDate }}</p>
+    {% endif %}
+
+    {% if summary %}
+      <p class="mt-3 text-slate-600">{{ summary }}</p>
+    {% endif %}
+  </header>
+
+  <div class="prose prose-slate mt-8">
+    {{ content | safe }}
+  </div>
+
+  <footer class="mt-10">
+    <a class="text-sm underline" href="/signals/">← All Frontier Signals</a>
+  </footer>
+</article>
