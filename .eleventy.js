@@ -22,6 +22,16 @@ module.exports = function(eleventyConfig) {
     `;
   });
 
+  // Shortcode: footnote block
+  eleventyConfig.addPairedShortcode("footnote", (content) => {
+    return `
+      <div class="mt-2 ml-1 text-sm italic text-slate-600">
+        ${content}
+      </div>
+    `;
+  });
+
+  // Eleventy config return
   return {
     dir: { 
       input: "src", 

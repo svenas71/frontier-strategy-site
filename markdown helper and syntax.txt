@@ -1,0 +1,107 @@
+---
+layout: layouts/base.njk
+title: Shortcodes Cheat Sheet
+permalink: /cheatsheet/
+---
+
+# Eleventy Shortcodes — Demo Page
+
+This page shows all custom shortcodes available in your Frontier Strategy site.  
+Keep it as a quick reference.
+
+---
+
+## 1. Year
+
+Example:  
+```njk
+© {% year %} Frontier Strategy
+
+
+<div class="prose prose-slate">
+  {% md %}
+  # Heading
+  - Bullet
+  - List
+  {% endmd %}
+</div>
+
+
+<div class="prose prose-slate">
+  {% md %}
+  # Heading
+  - Bullet
+  - List
+  {% endmd %}
+</div>
+
+{% figure "Figure 1. Overview of the programme." %}
+![programme](/images/programme.png)
+{% endfigure %}
+
+
+{% set cap %}
+Participants (L to R): Vivek Thacker¹, Eileen Nugent¹, Jonathan Baxter²…
+{% endset %}
+
+{% figure cap %}
+![programme](/images/programme.png)
+{% endfigure %}
+
+
+{% footnote %}
+This is a note in smaller, italic text.
+{% endfootnote %}
+
+
+{% footnote %}First note{% endfootnote %}
+{% footnote %}Second note{% endfootnote %}
+
+
+
+
+// Helper: 1 -> "¹", 12 -> "¹²"
+function toSup(n) {
+  const map = { "0":"⁰","1":"¹","2":"²","3":"³","4":"⁴","5":"⁵","6":"⁶","7":"⁷","8":"⁸","9":"⁹" };
+  return String(n).split("").map(d => map[d] || d).join("");
+}
+
+module.exports = function(eleventyConfig) {
+  // ... your existing config above ...
+
+  // Reset numbering (optional to call; counter also resets naturally per page)
+  eleventyConfig.addShortcode("footnotesReset", function() {
+    this.page._footnoteIndex = 0;
+    return "";
+  });
+
+  // Auto-numbered footnote block
+  eleventyConfig.addPairedShortcode("footnote", function(content) {
+    // Per-page counter
+    this.page._footnoteIndex = (this.page._footnoteIndex || 0) + 1;
+    const n = this.page._footnoteIndex;
+    const sup = toSup(n);
+
+    return `
+      <div class="mt-2 ml-4 text-sm italic text-slate-600">
+        <span class="not-italic mr-1">${sup}</span>${content}
+      </div>
+    `;
+  });
+
+  // ... your existing return { dir: {…}, … }
+};
+
+
+### Contributing Institutions
+
+{% footnote %}
+1. University of Cambridge  
+2. University of Sussex  
+3. Babraham Institute  
+{% endfootnote %}
+
+{% footnote %}
+1. Washington University in St. Louis  
+2. RIKEN National Institute of Genetics  
+{% endfootnote %}

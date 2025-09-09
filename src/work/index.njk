@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+title: All Work
+permalink: /work/index.html
+---
+
+<section class="mx-auto max-w-6xl px-4 py-12">
+  <h1 class="text-3xl font-semibold">All Case Studies</h1>
+
+  <div class="mt-6 grid md:grid-cols-3 gap-6">
+    {% for c in collections.case | reverse %}
+      <article class="rounded-2xl border bg-white p-6">
+        <h2 class="font-semibold text-base">
+          <a href="{{ c.url }}" class="hover:underline">{{ c.data.title }}</a>
+        </h2>
+        {% if c.data.summary %}
+          <p class="mt-2 text-sm text-slate-600">{{ c.data.summary }}</p>
+        {% endif %}
+        <p class="mt-4"><a class="text-sm underline" href="{{ c.url }}">Read case →</a></p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
