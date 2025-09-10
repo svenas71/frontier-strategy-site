@@ -80,7 +80,7 @@
 
   <div x-data="carouselResponsive({ total: 7 })" x-init="init()" class="mt-6 select-none">
     <!-- viewport -->
-    <div class="relative overflow-hidden rounded-2xl">
+    <div class="relative overflow-hidden rounded-2xl carousel-viewport">
       <!-- track -->
       <div class="track flex -mx-3 transition-transform duration-700 will-change-transform touch-pan-y" :style="translate">
         
@@ -226,34 +226,67 @@
       },
 
       attachSwipe() {
-        const track = this.$root.querySelector('.track');
-        if (!track) return;
+  // Attach to the fixed viewport, not the moving track
+  const viewport = this.$root.querySelector('.carousel-viewport');
+  if (!viewport) return;
 
-        let startX = null, moved = false;
+  // Only run on touch-capable devices
+  const isTouchCapable = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  if (!isTouchCapable) return;
 
-        // Only attach on touch devices
-        const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-        if (!isTouch) return;
+  // Improve scroll behavior: allow vertical scroll, we capture horizontal intent
+  viewport.style.touchAction = 'pan-y';
 
-        track.addEventListener('touchstart', (e) => {
-          if (e.target.closest('a')) return; // don’t hijack link taps
-          startX = e.touches[0].clientX;
-          moved = false;
-        }, { passive: true });
+  let startX = null, moved = false;
 
-        track.addEventListener('touchmove', (e) => {
-          if (startX == null) return;
-          const dx = e.touches[0].clientX - startX;
-          if (Math.abs(dx) > 10) moved = true;
-        }, { passive: true });
+  const onStart = (clientX, target) => {
+    // Don’t hijack taps that start on links
+    if (target && target.closest && target.closest('a')) return;
+    startX = clientX;
+    moved = false;
+  };
 
-        track.addEventListener('touchend', (e) => {
-          if (startX == null) return;
-          const dx = e.changedTouches[0].clientX - startX;
-          if (moved && Math.abs(dx) > 40) { dx < 0 ? this.next() : this.prev(); }
-          startX = null; moved = false;
-        }, { passive: true });
-      },
+  const onMove = (clientX) => {
+    if (startX == null) return;
+    const dx = clientX - startX;
+    if (Math.abs(dx) > 10) moved = true;
+  };
+
+  const onEnd = (clientX) => {
+    if (startX == null) return;
+    const dx = clientX - startX;
+    if (moved && Math.abs(dx) > 40) {
+      dx < 0 ? this.next() : this.prev();
+    }
+    startX = null; moved = false;
+  };
+
+  // Prefer Pointer Events when available
+  if (window.PointerEvent) {
+    viewport.addEventListener('pointerdown', (e) => {
+      if (e.pointerType !== 'touch') return;
+      onStart(e.clientX, e.target);
+    }, { passive: true });
+
+    viewport.addEventListener('pointermove', (e) => {
+      if (e.pointerType !== 'touch') return;
+      onMove(e.clientX);
+    }, { passive: true });
+
+    viewport.addEventListener('pointerup', (e) => {
+      if (e.pointerType !== 'touch') return;
+      onEnd(e.clientX);
+    }, { passive: true });
+
+    viewport.addEventListener('pointercancel', () => { startX = null; moved = false; }, { passive: true });
+  } else {
+    // Fallback: Touch Events
+    viewport.addEventListener('touchstart', (e) => onStart(e.touches[0].clientX, e.target), { passive: true });
+    viewport.addEventListener('touchmove',  (e) => onMove(e.touches[0].clientX), { passive: true });
+    viewport.addEventListener('touchend',   (e) => onEnd(e.changedTouches[0].clientX), { passive: true });
+    viewport.addEventListener('touchcancel', () => { startX = null; moved = false; }, { passive: true });
+  }
+},
 
       init() {
         // initial
