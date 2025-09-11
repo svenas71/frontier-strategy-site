@@ -6,11 +6,20 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "public": "/" });
   eleventyConfig.addPassthroughCopy({ "src/images": "images" });
 
+  // Markdown-it with global settings
+  const md = new MarkdownIt({
+    html: true,
+    breaks: true,   // ← single line breaks respected everywhere
+    linkify: true
+  });
+
+  // Set markdown-it as the global Markdown library
+  eleventyConfig.setLibrary("md", md);
+
   // Shortcode: current year
   eleventyConfig.addShortcode("year", () => new Date().getFullYear());
 
   // Shortcode: render Markdown inside .njk files
-  const md = new MarkdownIt({ html: true, breaks: true, linkify: true });
   eleventyConfig.addPairedShortcode("md", (content) => md.render(content));
 
   // Shortcode: figure with caption

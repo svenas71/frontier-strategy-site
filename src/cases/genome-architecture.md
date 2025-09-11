@@ -1,20 +1,26 @@
 ---
 layout: layouts/case.njk
-title: Genome Architecture → Partner Ready
-summary: Reframed complex biology into a partner-ready narrative; 30-account list; 5 warm intros in 8 weeks.
+title: Genome Architecture meets Systems Biology
+summary: From chromatin states to 3D nuclear simulations — a systems-level view of how genome architecture drives gene regulation
 date: 2025-09-08
 tags: [case]
 permalink: /work/genome-architecture/
 ---
 
-### Goal
-Translate advanced genome architecture into a credible BD story.
 
-### What we did
-- Clarified value narrative and decision gates  
-- Built 30-account target list; mapped warm intros  
-- Created partner deck v1
 
-### Outcome
-- 5 warm intros in 8 weeks  
-- ~40% less meeting thrash
+
+**Methods Mol Biol**
+*Sven Sewitz, Karen Lipkow*
+Systems Biology Approaches for Understanding Genome Architecture (2016)
+
+
+
+>Abstract
+The linear and three-dimensional arrangement and composition of chromatin in eukaryotic genomes underlies the mechanisms directing gene regulation. Understanding this organization requires the integration of many data types and experimental results. Here we describe the approach of integrating genome-wide protein-DNA binding data to determine chromatin states. To investigate spatial aspects of genome organization, we present a detailed description of how to run stochastic simulations of protein movements within a simulated nucleus in 3D. This systems level approach enables the development of novel questions aimed at understanding the basic mechanisms that regulate genome dynamics.
+
+Keywords: Chromatin states; Genome organization; Hidden Markov models; Stochastic spatial simulations; Systems biology.
+
+{% footnote %}
+PMID: 27283305 DOI: 10.1007/978-1-4939-3631-1_9
+{% endfootnote %}
