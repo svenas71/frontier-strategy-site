@@ -4,6 +4,7 @@ title: Data Science & AI in Life Sciences
 summary: Over 15 years of computational biology and bioinformatics experience.
 date: 2025-09-08
 tags: [case]
+order: 3
 permalink: /work/data_science/
 ---
 

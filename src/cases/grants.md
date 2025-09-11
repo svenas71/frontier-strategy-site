@@ -4,6 +4,7 @@ title: "Royal Society Conference on Chromosome Dynamics"
 summary: Convened 20 leading scientists across modelling & experimentation, seeding new collaborations in genome architecture.
 date: 2025-09-08
 tags: [case]
+order: 4
 permalink: /work/grant-writing/
 ---
 

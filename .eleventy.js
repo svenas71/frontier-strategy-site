@@ -47,10 +47,26 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(d, { zone: "utc" }).toFormat("d LLL yyyy");
   });
 
+  // In .eleventy.js
+   eleventyConfig.addCollection("orderedCases", (collection) => {
+  return collection
+    .getFilteredByTag("case")
+    .filter(item => item.data.eleventyExcludeFromCollections !== true && item.data.draft !== true)
+    .sort((a, b) => {
+      const A = Number.isFinite(+a.data.order) ? +a.data.order : 9999;
+      const B = Number.isFinite(+b.data.order) ? +b.data.order : 9999;
+      return A - B;
+    });
+  });
+
+  eleventyConfig.addFilter("take", (arr, n = 1) => (arr || []).slice(0, n));
+
   // Eleventy directories / engines
   return {
     dir: { input: "src", includes: "_includes", output: "_site" },
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
   };
+  
+  
 };

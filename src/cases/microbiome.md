@@ -1,9 +1,10 @@
 ---
 layout: layouts/case.njk
 title: Microbiome & Metagenomics
-summary: 
+summary: Translating microbiome science into strategy, partnerships, and impact
 date: 2025-09-08
 tags: [case]
+order: 2
 permalink: /work/microbiome/
 ---
 

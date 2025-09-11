@@ -50,7 +50,7 @@ description: Frontier Strategy helps life science teams turn complex biology int
 <section id="signals" class="mx-auto max-w-6xl px-4 py-16">
   <div class="flex items-end justify-between">
     <h2 class="text-2xl md:text-3xl font-semibold">Frontier Signals</h2>
-    <a href="/signals/" class="text-sm underline">See all posts →</a>
+    <a href="/signals/" class="text-sm underline">See all Posts →</a>
   </div>
 
   {% if total >= 1 %}
@@ -241,7 +241,7 @@ description: Frontier Strategy helps life science teams turn complex biology int
 <section id="services" class="mx-auto max-w-6xl px-4 py-16">
   <div class="flex items-end justify-between">
     <h2 class="text-2xl md:text-3xl font-semibold">Frontier Services</h2>
-    <a href="/services/" class="text-sm underline">See all services →</a>
+    <a href="/services/" class="text-sm underline">See all Services →</a>
   </div>
 
   <div class="mt-6 grid md:grid-cols-3 gap-6">
@@ -267,25 +267,31 @@ description: Frontier Strategy helps life science teams turn complex biology int
   <div class="mx-auto max-w-6xl px-4 py-16">
     <div class="flex items-end justify-between">
       <h2 class="text-2xl md:text-3xl font-semibold">Frontier Domains</h2>
-      <a href="/work/" class="text-sm underline">See all work →</a>
+      <a href="/work/" class="text-sm underline">See all Domains →</a>
     </div>
 
     <div class="mt-6 grid md:grid-cols-3 gap-6">
       {% set shown = 0 %}
-      {% for c in collections.case | reverse %}
-        {% if shown < 3 %}
-        <article class="rounded-2xl border bg-white p-6">
-          <h3 class="font-semibold text-base">
-            <a href="{{ c.url }}" class="hover:underline">{{ c.data.title }}</a>
-          </h3>
-          {% if c.data.summary %}
-            <p class="mt-2 text-sm text-slate-600">{{ c.data.summary }}</p>
-          {% endif %}
-          <p class="mt-4"><a class="text-sm underline" href="{{ c.url }}">Read case →</a></p>
-        </article>
-        {% set shown = shown + 1 %}
-        {% endif %}
-      {% endfor %}
+      
+      <!-- 
+<ul class="text-xs opacity-70 mb-4">
+  {% for it in collections.orderedCases %}
+    <li>{{ it.data.order }} — {{ it.data.title }}</li>
+  {% endfor %}
+</ul>
+ -->
+      
+      
+     {% for item in collections.orderedCases | take(3) %}
+  <article class="p-5 rounded-2xl border">
+    <h3 class="font-semibold text-base mb-2">
+  {{ item.data.title }}
+</h3>
+    {% if item.data.summary %}
+<p class="mt-2 text-sm text-slate-600">{{ item.data.summary }}</p>    {% endif %}
+    <a href="{{ item.url }}" class="inline-block mt-3 text-sm opacity-60">Read more →</a>
+  </article>
+{% endfor %}
 
       {% if (collections.case | length) == 0 %}
         <p class="text-sm text-slate-600">Case studies coming soon.</p>

@@ -4,6 +4,7 @@ title: Genome Architecture meets Systems Biology
 summary: From chromatin states to 3D nuclear simulations — a systems-level view of how genome architecture drives gene regulation
 date: 2025-09-08
 tags: [case]
+order: 1
 permalink: /work/genome-architecture/
 ---
 
