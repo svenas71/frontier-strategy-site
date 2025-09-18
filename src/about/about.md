@@ -25,6 +25,16 @@ Through Frontier Strategy, I help founders, investors, and organisations:
 
 ⸻
 
+## Who I Am
+
+I am Sven Sewitz, a molecular biologist turned strategist. After a decade at Oxford and Cambridge, contributing to landmark genomics research, I moved into biotech innovation — leading projects at Eagle Genomics and now advising companies, founders and investors through Frontier Strategy.
+
+<p class="mt-4">
+  For my full vita, please see 
+  <a href="/cv" class="text-blue-600 hover:underline">here</a>.
+</p>
+
+⸻
 
 
 ## Let’s Connect
