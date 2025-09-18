@@ -7,9 +7,9 @@ description: Turning frontier biology into strategy, partnerships, and lasting i
 
 ## Vision
 
-Science is advancing faster than ever — microbiome research, quantum biology, and data-driven biology are opening up new frontiers. Yet complexity often slows translation into outcomes.
+Science is advancing faster than ever — microbiome research, personalised medicine, quantum biology, and data-driven discovery are opening up new frontiers. Yet, the complexity of these fields often slows translation into outcomes.
 
-My mission is to help innovators not just make discoveries, but to turn them into sustainable businesses and lasting societal impact.
+My mission is to help innovators not just make discoveries, but to turn them into sustainable businesses with lasting societal impact.
 
 ⸻
 
@@ -30,7 +30,7 @@ Through Frontier Strategy, I help founders, investors, and organisations:
 ## Let’s Connect
 
 I’m based in Potsdam/Berlin and work with international teams across Europe, the UK, and beyond.
-Reach out via [LinkedIn](https://www.linkedin.com/in/sven-sewitz-6002a76/) or at [your email here].
+Reach out via [LinkedIn](https://www.linkedin.com/in/sven-sewitz-6002a76/) or at [info@frontier-innovation.com].
 
 
 
