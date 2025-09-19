@@ -1,6 +1,6 @@
 ---
-layout: layouts/base.njk
-title: Impressum — Frontier Strategy
+layout: layouts/post.njk
+title: Frontier Strategy
 permalink: /impressum/index.html
 ---
 
@@ -11,7 +11,7 @@ Angaben gemäß § 5 DDG.
 [[Straße Hausnr.]]  
 [[PLZ]] [[Ort]], Deutschland  
 
-E-Mail: hello@yourdomain.com  
+E-Mail: info@frontier-innovation.com
 USt-IdNr.: [[falls vorhanden]]
 
 *Stand: {% year %}*

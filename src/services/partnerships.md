@@ -1,7 +1,7 @@
 ---
 layout: layouts/service.njk
 title: Partnerships & BD
-summary: Identify targets, map intros, run a structured outreach loop.
+summary: Find and secure the right collaborators, from strategic pharma partners to biotech allies.
 tags: [service]
 permalink: /services/partnerships/
 ---

@@ -1,7 +1,7 @@
 ---
 layout: layouts/service.njk
-title: Positioning & Narrative
-summary: Clarify value, de-risk decisions, align teams around a crisp story.
+title: Life Science Venture Positioning
+summary: Translate complex biology into clear, compelling stories that resonate with investors and partners.
 tags: [service]
 permalink: /services/positioning/
 ---

@@ -72,6 +72,24 @@ Led innovation strategy for a biotech data company, building client-facing solut
 
 ---
 
+## Awards
+
+**Innovation Award**
+Eagle Genomics named Cambridge Independent AI Company of the Year 2023
+
+**Product Design Award**
+Product vision nominated for London UX/UI Design Award 2023
+
+**Scientific Achievements & Awards**
+Babraham Institute SPOC bridging grant
+Royal Society Research Fellow Scientific Seminar
+Prime-XS Funding (EU FP7) for Proteomics
+AAAS Awarded Membership, program ‘Excellence in Science’
+Jesus College, Cambridge, College Research Associate 
+Oxford University Graduate Studentship
+
+
+
 ## Selected Publications
 
 - **Javierre, B.M., Sewitz, S., Fraser, P., et al.** (2016). *Lineage-Specific Genome Architecture Links Enhancers and Non-coding Disease Variants to Target Gene Promoters*. **Cell** 167(5): 1369–1384.  
