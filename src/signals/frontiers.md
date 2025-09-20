@@ -33,3 +33,15 @@ In the coming weeks, more will appear here:
 
 
 The way doesn’t appear all at once. But it will appear — step by step.
+
+
+
+<div class="mt-12 pt-6 border-t border-slate-200">
+  <p class="text-slate-700">
+    If you are exploring a similar path, or are already on it, and want to reach out:
+  </p>
+  <a href="mailto:info@frontier-innovation.com"
+     class="inline-block mt-4 px-5 py-2 rounded-lg border border-slate-300 bg-white text-slate-700 font-medium hover:bg-slate-50 hover:border-slate-400">
+     Contact me
+  </a>
+</div>
