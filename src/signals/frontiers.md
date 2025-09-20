@@ -3,6 +3,7 @@ layout: layouts/signals.njk
 title: Views from the Frontier
 date: 2025-09-20
 pinned: true
+summary: Introducing Frontier Strategy.
 type: post
 tags: [signal]
 ---
