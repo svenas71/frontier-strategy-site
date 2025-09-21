@@ -271,29 +271,24 @@ description: Frontier Strategy helps life science teams turn complex biology int
     </div>
 
     <div class="mt-6 grid md:grid-cols-3 gap-6">
-      {% set shown = 0 %}
-      
-      <!-- 
-<ul class="text-xs opacity-70 mb-4">
-  {% for it in collections.orderedCases %}
-    <li>{{ it.data.order }} — {{ it.data.title }}</li>
-  {% endfor %}
-</ul>
- -->
-      
-      
-     {% for item in collections.orderedCases | take(3) %}
-  <article class="p-5 rounded-2xl border">
-    <h3 class="font-semibold text-base mb-2">
-  {{ item.data.title }}
-</h3>
-    {% if item.data.summary %}
-<p class="mt-2 text-sm text-slate-600">{{ item.data.summary }}</p>    {% endif %}
-    <a href="{{ item.url }}" class="inline-block mt-3 text-sm opacity-60">Read more →</a>
-  </article>
-{% endfor %}
+      {% for item in collections.orderedCases | take(3) %}
+        {% set href = item.url or item.data.page.url %}
+        <article class="p-5 rounded-2xl border">
+          <h3 class="font-semibold text-base mb-2">
+            <a href="{{ href | url }}" class="hover:underline">
+              {{ item.data.title }}
+            </a>
+          </h3>
+          {% if item.data.summary %}
+            <p class="mt-2 text-sm text-slate-600">{{ item.data.summary }}</p>
+          {% endif %}
+          <a href="{{ href | url }}" class="inline-block mt-3 text-sm opacity-60 hover:opacity-100">
+            Read more →
+          </a>
+        </article>
+      {% endfor %}
 
-      {% if (collections.case | length) == 0 %}
+      {% if (collections.orderedCases | length) == 0 %}
         <p class="text-sm text-slate-600">Case studies coming soon.</p>
       {% endif %}
     </div>
