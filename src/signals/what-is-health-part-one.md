@@ -23,7 +23,10 @@ And it is hard to blame physicians of old who failed to understand that bacteria
 
 **Zantac**, **Thalidomide**, **Glyphosate** — all examples of compounds that made it to market while still causing significant harm. Now, of course, the internet of the medical and drug development sphere is full of renewed hope that **AI** will allow a much improved way to design and test new drugs. First promising reports are appearing, and the field is filled with hope — if not to say hype.  
 
-But again — our framing of the problem is determined by our current state of knowledge into what the problem is. This framing was most succinctly formulated, as I briefly touched upon in a [previous post](http://localhost:8080/posts/143004646.ozempic-a-case-study-in-hybris/), by **Robert Koch** and his famous four postulates.  
+But again — our framing of the problem is determined by our current state of knowledge into what the problem is. This framing was most succinctly formulated, as I briefly touched upon in a [previous post]({{ '/signals/ozempic-a-case-study-in-hybris/' | url }}), by **Robert Koch** and his famous four postulates.  
+
+
+
 
 ---
 > The problem with AI in medicine is that we are using 21st century technology to answer a 19th century question.
