@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "What is Health - Part One"
 date: 2024-04-05
-summary: AI won’t fix medicine if we’re still asking 19th-century questions
+summary: AI won’t fix medicine if we’re using 21st-century technology to ask 19th-century questions
 type: post
 tags: [signal]
 ---
