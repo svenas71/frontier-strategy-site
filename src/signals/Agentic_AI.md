@@ -9,7 +9,7 @@ tags: [signal]
 
 As the Irish proverb goes: “*If you want to get to there, I wouldn’t start from here*.”
 
-Or as an Oxford porter might tell you, when asked how to achieve such a spotless lawn: “Start 800 years ago.””
+Or as an Oxford porter might tell you, when asked how to achieve such a spotless lawn: “Start 800 years ago.”
 
 The same is true for Artificial General Intelligence.
 
