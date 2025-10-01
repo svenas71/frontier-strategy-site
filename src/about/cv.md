@@ -92,26 +92,26 @@ Oxford University Graduate Studentship
 
 ## Selected Publications
 
-- **Javierre, B.M., Sewitz, S., Fraser, P., et al.** (2016). *Lineage-Specific Genome Architecture Links Enhancers and Non-coding Disease Variants to Target Gene Promoters*. **Cell** 167(5): 1369–1384.  
+- **Javierre, B.M., Sewitz, S., Fraser, P., et al.** (2016). *Lineage-Specific Genome Architecture Links Enhancers and Non-coding Disease Variants to Target Gene Promoters*. **Cell** 167(5): 1369–1384. [(full text)](https://www.cell.com/cell/fulltext/S0092-8674(16)31322-8)
 
 
 ### 3D Genome Organisation
 **S. Sewitz**, Z. Fahmi, K. Lipkow, Higher order assembly: Folding the Chromosome. Curr. Opin. Struct. Biol. 42 [(2017) ](https://pubmed.ncbi.nlm.nih.gov/28284913/)
 **S. Sewitz** et al., Heterogeneous chromatin mobility derived from chromatin states is a determinant of genome organisation in S. cerevisiae. [bioRxiv (2017)](https://doi.org/10.1101/106344)
-**S. Sewitz**, K. Lipkow, in Systems Biology Approaches for Understanding Genome Architecture, in Chromosome Architecture, M. C. Leake, Ed. (Springer New York, 2016), Methods in Molecular Biology, pp. 109–126 
-B. M. Javierre... **S. Sewitz** et al., Lineage-Specific Genome Architecture Links Enhancers and Non-coding Disease Variants to Target Gene Promoters. Cell. 167, 1369–1384 (2016) 
+**S. Sewitz**, K. Lipkow, in Systems Biology Approaches for Understanding Genome Architecture, in Chromosome Architecture, M. C. Leake, Ed. (Springer New York, 2016), [Methods in Molecular Biology, pp. 109–126](https://link.springer.com/protocol/10.1007/978-1-4939-3631-1_9) 
+B. M. Javierre... **S. Sewitz** et al., Lineage-Specific Genome Architecture Links Enhancers and Non-coding Disease Variants to Target Gene Promoters. [Cell. 167, 1369–1384 (2016)](https://www.cell.com/cell/fulltext/S0092-8674(16)31322-8)
 
 ### Chemical Biology of Cancer
-M. Bejugam... **S. Sewitz** et al., Targeting the c-Kit Promoter G-quadruplexes with 6-Substituted Indenoisoquinolines. ACS Med. Chem. Lett. (2010) 
-Z. A. E. Waller, **S. Sewitz**, S.-T. D. Hsu, S. Balasubramanian, A small molecule that disrupts G- quadruplex DNA structure and enhances gene expression. J. Am. Chem. Soc. 131, 12628–12633 (2009) 
-H. Fernando... **S. Sewitz** et al., Genome-wide analysis of a G-quadruplex-specific single-chain antibody that regulates gene expression. Nucleic Acids Res. 37, 6716–6722 (2009) 
-M. Bejugam... **S. Sewitz** et al., Trisubstituted isoalloxazines as a new class of G-quadruplex binding ligands: small molecule regulation of c-kit oncogene expression. J. Am. Chem. Soc. 129, 12926–12927 (2007) 
+M. Bejugam... **S. Sewitz** et al., Targeting the c-Kit Promoter G-quadruplexes with 6-Substituted Indenoisoquinolines. [ACS Med. Chem. Lett. (2010)](https://pubs.acs.org/doi/abs/10.1021/ml100062z)
+Z. A. E. Waller, **S. Sewitz**, S.-T. D. Hsu, S. Balasubramanian, A small molecule that disrupts G- quadruplex DNA structure and enhances gene expression. [J. Am. Chem. Soc. 131, 12628–12633 (2009)](https://pubs.acs.org/doi/10.1021/ja901892u)
+H. Fernando... **S. Sewitz** et al., Genome-wide analysis of a G-quadruplex-specific single-chain antibody that regulates gene expression. [Nucleic Acids Res. 37, 6716–6722 (2009)](https://academic.oup.com/nar/article/37/20/6716/1112789)
+M. Bejugam... **S. Sewitz** et al., Trisubstituted isoalloxazines as a new class of G-quadruplex binding ligands: small molecule regulation of c-kit oncogene expression. [J. Am. Chem. Soc. 129, 12926–12927 (2007)](https://pubs.acs.org/doi/10.1021/ja075881p)
 
 ### Bacterial Transposition
-D. Liu, **S. Sewitz**, P. Crellin, R. Chalmers, Functional coupling between the two active sites during Tn 10 transposition buffers the mutation of sequences critical for DNA hairpin processing. Mol. Microbiol. 62, 1522–1533 (2006) 
+D. Liu, **S. Sewitz**, P. Crellin, R. Chalmers, Functional coupling between the two active sites during Tn 10 transposition buffers the mutation of sequences critical for DNA hairpin processing. [Mol. Microbiol. 62, 1522–1533 (2006)](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2958.2006.05432.x) 
 P. Crellin, **S. Sewitz**, R. Chalmers, DNA looping and catalysis; the IHF-folded arm of Tn10 promotes conformational changes and hairpin resolution. [Mol. Cell. 13, 537–547 (2004)](https://www.cell.com/molecular-cell/fulltext/S1097-2765(04)00052-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1097276504000528%3Fshowall%3Dtrue) 
-**S. Sewitz**, P. Crellin, R. Chalmers, The positive and negative regulation of Tn10 transposition by IHF is mediated by structurally asymmetric transposon arms. Nucleic Acids Res. 31, 5868–5876 (2003) 
-R. Chalmers, **S. Sewitz**, K. Lipkow, P. Crellin, Complete nucleotide sequence of Tn10. J. Bacteriol. 182, 2970–2972 (2000)
+**S. Sewitz**, P. Crellin, R. Chalmers, The positive and negative regulation of Tn10 transposition by IHF is mediated by structurally asymmetric transposon arms. [Nucleic Acids Res. 31, 5868–5876 (2003)](https://academic.oup.com/nar/article/31/20/5868/1039505)
+R. Chalmers, **S. Sewitz**, K. Lipkow, P. Crellin, Complete nucleotide sequence of Tn10. [J. Bacteriol. 182, 2970–2972 (2000)](https://doi.org/10.1128/jb.182.10.2970-2972.2000)
 
 ![DNA looping](/images/cover.jpg)
 
