@@ -1,15 +1,18 @@
 {% macro pageIntro(title, description, ctaHref="", ctaLabel="") -%}
-<section class="mx-auto max-w-6xl px-4 pt-12 md:pt-16">
-  <div class="flex items-end justify-between gap-6">
-    <div>
-      <h1 class="text-3xl md:text-4xl font-semibold">{{ title }}</h1>
+<section class="mb-8">
+  <!-- Stack on mobile; row on md+ -->
+  <div class="flex flex-col gap-2 md:flex-row md:items-end md:justify-between md:gap-6">
+    <div class="min-w-0 md:flex-1">
+      <h1 class="text-2xl md:text-3xl font-semibold">{{ title }}</h1>
       {% if description %}
-        <p class="mt-3 text-slate-600 md:text-lg">{{ description | safe }}</p>
+        <p class="mt-2 text-slate-600 md:text-lg">{{ description | safe }}</p>
       {% endif %}
     </div>
 
     {% if ctaHref and ctaLabel %}
-      <a href="{{ ctaHref }}" class="text-sm underline whitespace-nowrap">
+      <!-- On mobile: sits below title; on md+: right aligned, never wraps -->
+      <a href="{{ ctaHref }}"
+         class="text-sm underline whitespace-nowrap shrink-0 self-start md:self-end">
         {{ ctaLabel }}
       </a>
     {% endif %}
