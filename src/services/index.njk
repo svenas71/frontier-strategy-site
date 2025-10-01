@@ -4,8 +4,18 @@ title: Services — Frontier Strategy
 permalink: /services/index.html
 ---
 
+{% from "components/page-intro.njk" import pageIntro %}
+
+<section class="mx-auto max-w-6xl px-4 py-16">
+  {{ pageIntro(
+    "Frontier Services",
+    "Work with me on strategy, analysis, and innovation in the life sciences — practical support for projects, partnerships, and leadership challenges."
+  ) }}
+
+
+
 <section class="mx-auto max-w-6xl px-4 py-12">
-  <h1 class="text-3xl font-semibold">Services</h1>
+  
   <div class="mt-6 grid md:grid-cols-3 gap-6">
     {% for s in collections.service | sort(attribute='data.title') %}
       <article class="rounded-2xl border p-6">

@@ -4,8 +4,17 @@ title: Frontier Signals
 permalink: /signals/
 ---
 
+{% from "components/page-intro.njk" import pageIntro %}
+
 <section class="mx-auto max-w-6xl px-4 py-16">
-  <h1 class="text-2xl md:text-3xl font-semibold">Frontier Signals</h1>
+  {{ pageIntro(
+    "Frontier Signals",
+    "Short essays and commentary on the signals I pick up across biotech, data, and innovation — and what they might mean next."
+  ) }}
+
+
+<section class="mx-auto max-w-6xl px-4 py-16">
+  
 
   <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
     {% for p in collections.signal | reverse %}
