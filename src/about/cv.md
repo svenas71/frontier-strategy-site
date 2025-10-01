@@ -27,7 +27,7 @@ External Stakeholder Management & High Performance Team Building
 16+ years research and innovation in human health:
 Structural & Chemical Biology, 3D Genome Organisation, Bioinformatics
 10+ years wet lab research experience & 6 years computational genomics
-Project Grant Evaluations for the European Research Agency (ERA)
+Project Grant Evaluations for the European Research Executive Agency (REA)
 
 
 
