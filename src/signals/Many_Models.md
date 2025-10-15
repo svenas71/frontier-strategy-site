@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: "The Many Models of Structured Innovation"
-date: 2025-10-14
+date: 2025-10-15
 summary: The Paradox of Innovation and Structure
 type: post
 tags: [signal]
@@ -10,7 +10,7 @@ tags: [signal]
 
 
 
-> Innovation loves Chaos - but Chaos can't Maintain Innovation
+> Innovation Loves Chaos - but Chaos can't Maintain Innovation
 
 Creativity has always been the art of rephrasing rules — of circumventing certainty, of pushing, extending, and refusing to let paradigms set the limits of imagination. It is a uniquely human endeavour, restless and constructive, and it has served us well — in most parts — for several millennia.
 
