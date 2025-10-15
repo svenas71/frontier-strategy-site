@@ -20,7 +20,7 @@ Other nations have built their own architectures around creativity and innovatio
 
 In 2022, the UK made a bold addition to this landscape: the **Advanced Research and Invention Agency (ARIA)** — a small, high-stakes experiment in scientific risk-taking, designed to fund ideas with the potential for genuine paradigm shifts.
 
-
+Germany, too, has begun to experiment with new structures for risk. In 2019, the Federal Government founded SPRIND — the Federal Agency for Disruptive Innovation — as a domestic counterpart to ARIA, charged with pursuing Sprunginnovationen, or “leap innovations.” Unlike traditional research funders, SPRIND operates with greater autonomy and flexibility, bridging the gap between public accountability and private agility. Its recent collaboration with [**Renaissance Philanthropy**](https://www.renaissancephilanthropy.org/news-and-insights/renaissance-philanthropy-and-sprind-partner-on-big-if-true-science-accelerator) signals an even bolder step: the fusion of public mission with philanthropic risk capital — a hybrid model that could reshape Europe’s approach to high-impact innovation.
 
 ### *Discovery Dies within the Confines of Shareholder Value*
 
