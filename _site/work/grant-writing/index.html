@@ -131,19 +131,7 @@ Being able to understand chromatin dynamics quantitatively will impact our under
     </div>
   </footer>
 
-  <!-- Local theme toggle -->
-  <button id="themeToggle" class="fixed right-4 bottom-4 px-3 py-1.5 rounded-xl text-white"
-          style="background:#1C1E22;box-shadow:0 8px 24px rgba(16,19,23,.15);z-index:50">
-    Kritanya: Off
-  </button>
-  <script>
-    const btn = document.getElementById('themeToggle');
-    const root = document.documentElement;
-    btn.addEventListener('click', () => {
-      root.classList.toggle('theme-kritanya');
-      btn.textContent = 'Kritanya: ' + (root.classList.contains('theme-kritanya') ? 'On' : 'Off');
-    });
-  </script>
+  
 
   <script src="https://unpkg.com/alpinejs" defer></script>
   <script defer src="/_vercel/insights/script.js"></script>
