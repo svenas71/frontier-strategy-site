@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="theme-kritanya">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -7,6 +7,7 @@
   <meta name="description" content="Frontier Strategy helps life science teams turn complex biology into clear strategy, partnerships, and measurable results.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body class="antialiased text-slate-800">
   <!-- Nav -->
@@ -20,13 +21,14 @@
        <a href="/about" class="hover:text-slate-900">About</a>
        <a href="/#contact" class="hover:underline">Contact</a>
      </nav>
-      <a href="/#contact" class="inline-block rounded-xl border px-3 py-1.5 text-sm hover:bg-slate-50">Let’s talk</a>
+      <a href="/#contact" class="btn-cta btn-sm">Let’s talk</a>
     </div>
   </header>
 
   <main>
-    <article class="mx-auto max-w-3xl px-4 py-12">
-  <header>
+    
+<article class="mx-auto max-w-3xl px-4 py-12">
+  <header class="mb-6">
     <h1 class="text-3xl font-semibold">The Many Models of Structured Innovation</h1>
 
     
@@ -34,10 +36,10 @@
     
 
     
-  <p class="mt-4 text-xl md:text-2xl font-medium text-slate-700 leading-relaxed">
-    The Paradox of Innovation and Structure
-  </p>
-
+      <p class="mt-4 text-xl md:text-2xl font-medium text-slate-700 leading-relaxed">
+        The Paradox of Innovation and Structure
+      </p>
+    
   </header>
 
   <div class="prose prose-slate mt-8">
@@ -82,6 +84,21 @@
       </div>
     </div>
   </footer>
+
+  <!-- Local theme toggle -->
+  <button id="themeToggle" class="fixed right-4 bottom-4 px-3 py-1.5 rounded-xl text-white"
+          style="background:#1C1E22;box-shadow:0 8px 24px rgba(16,19,23,.15);z-index:50">
+    Kritanya: Off
+  </button>
+  <script>
+    const btn = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    btn.addEventListener('click', () => {
+      root.classList.toggle('theme-kritanya');
+      btn.textContent = 'Kritanya: ' + (root.classList.contains('theme-kritanya') ? 'On' : 'Off');
+    });
+  </script>
+
   <script src="https://unpkg.com/alpinejs" defer></script>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>

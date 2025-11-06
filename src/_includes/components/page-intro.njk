@@ -1,27 +1,43 @@
-{% macro pageIntro(title, description, ctaHref="", ctaLabel="") -%}
-<section class="mb-8">
-  <!-- Stack on mobile; row on md+ -->
-  <div class="flex flex-col md:flex-row md:items-end md:justify-between md:gap-6">
+{% macro pageIntro(title, description, ctaHref="", ctaLabel="", variant="default") -%}
+{# 
+  variant options:
+  - "default" → bone background (harmonises with Kritanya)
+  - "copper"  → copper gradient hero
+#}
+
+<section class="page-intro mb-8 {% if variant == 'copper' %}k-gradient-copper text-white rounded-2xl shadow-md{% endif %}">
+  <div class="flex flex-col md:flex-row md:items-end md:justify-between md:gap-6
+              {% if variant == 'copper' %}px-6 py-8{% endif %}">
+    
     <!-- Text column -->
     <div class="min-w-0 md:flex-1">
-      <h1 class="text-2xl md:text-3xl font-semibold tracking-tight">{{ title }}</h1>
+      <h1 class="text-2xl md:text-3xl font-semibold tracking-tight
+                 {% if variant == 'copper' %}text-white{% endif %}">
+        {{ title }}
+      </h1>
+
       {% if description %}
-        <p class="mt-2 text-slate-600 text-base md:text-lg">{{ description | safe }}</p>
+        <p class="mt-2 text-base md:text-lg
+                  {% if variant == 'copper' %}text-white/90{% else %}text-slate-600{% endif %}">
+          {{ description | safe }}
+        </p>
       {% endif %}
 
-      {# Mobile CTA: sits under the paragraph, left-aligned #}
+      {# Mobile CTA #}
       {% if ctaHref and ctaLabel %}
         <a href="{{ ctaHref }}"
-           class="mt-2 inline-block text-sm underline whitespace-nowrap md:hidden">
+           class="mt-2 inline-block text-sm underline whitespace-nowrap md:hidden
+                  {% if variant == 'copper' %}text-white/90 hover:text-white{% endif %}">
           {{ ctaLabel }}
         </a>
       {% endif %}
     </div>
 
-    {# Desktop CTA: right-aligned, never wraps #}
+    {# Desktop CTA #}
     {% if ctaHref and ctaLabel %}
       <a href="{{ ctaHref }}"
-         class="hidden md:inline-block text-sm underline whitespace-nowrap shrink-0 self-end">
+         class="hidden md:inline-block text-sm underline whitespace-nowrap shrink-0 self-end
+                {% if variant == 'copper' %}text-white/90 hover:text-white{% endif %}">
         {{ ctaLabel }}
       </a>
     {% endif %}

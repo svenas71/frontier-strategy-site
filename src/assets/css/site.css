@@ -1,0 +1,154 @@
+:root{
+  --ink:#1C1E22; --slate:#626872; --mist:#E7EAEE; --bone:#F7F7F5;
+  --copper:#C46B3A; --sandstone:#E6B98E; --jade:#2E8B6D; --night:#0F1114;
+
+  /* default site mapping (keeps current look) */
+  --bg:#ffffff; --card:#ffffff; --text:#0f172a; --muted:#64748b;
+  --ring:#334155; --link:#0ea5a4;
+}
+
+/* Enable Kritanya by adding .theme-kritanya on <html> */
+.theme-kritanya{
+  --bg:var(--bone); --card:#ffffff; --text:var(--ink); --muted:var(--slate);
+  --ring:var(--copper); --link:var(--jade);
+}
+
+/* Optional dark variant: add both classes on <html> */
+.theme-kritanya.theme-dark{
+  --bg:var(--night); --card:#15181C; --text:#EDEFF2; --muted:#AAB0B8;
+  --ring:var(--sandstone); --link:#7FD7BD;
+}
+
+/* Base mappings */
+html,body{background:var(--bg);color:var(--text);}
+a{color:var(--link);}
+hr, .border-t, .border-b, .border { border-color: var(--mist) !important; }
+.k-card{background:var(--card);border:1px solid color-mix(in oklab,var(--mist),transparent 40%);
+  border-radius:16px;box-shadow:0 8px 24px rgba(16,19,23,.08);padding:1rem;}
+.k-gradient-copper{background:linear-gradient(135deg,#C46B3A 0%,#E6B98E 100%);}
+.k-gradient-jade{background:linear-gradient(135deg,#2E8B6D 0%,#E7EAEE 100%);}
+.k-ring{box-shadow:0 0 0 2px var(--ring) inset;}
+
+
+/* ===== Make Kritanya visually obvious ===== */
+
+/* Global surface + text */
+.theme-kritanya html,
+.theme-kritanya body { background: var(--bone) !important; color: var(--ink) !important; }
+
+/* Common Tailwind utilities you’re using */
+.theme-kritanya .bg-white { background-color: var(--card) !important; }
+.theme-kritanya .text-slate-800 { color: var(--ink) !important; }
+.theme-kritanya .text-slate-500 { color: color-mix(in oklab, var(--slate), white 10%) !important; }
+.theme-kritanya .border-b,
+.theme-kritanya .border-t,
+.theme-kritanya .border { border-color: var(--mist) !important; }
+
+/* Header: give it a slight card feel to differentiate */
+.theme-kritanya header { background: color-mix(in oklab, var(--card), transparent 0%) !important; }
+.theme-kritanya header a:hover { text-decoration-color: var(--copper); }
+
+/* Primary link/CTA accent */
+.theme-kritanya a { color: var(--jade); }
+.theme-kritanya a:hover { color: color-mix(in oklab, var(--jade), black 12%); }
+.theme-kritanya a.inline-block.rounded-xl.border { border-color: var(--copper) !important; }
+.theme-kritanya a.inline-block.rounded-xl.border:hover { background: color-mix(in oklab, var(--copper), white 88%) !important; }
+
+/* Demo hero utility you can drop anywhere */
+.k-hero { border-radius: 1.25rem; padding: 2rem; color: white; box-shadow: 0 12px 32px rgba(16,19,23,.14); }
+.theme-kritanya .k-hero { background: linear-gradient(135deg, var(--copper) 0%, var(--sandstone) 100%); }
+
+/* Card look */
+.theme-kritanya .k-card { background: var(--card); border: 1px solid color-mix(in oklab, var(--mist), transparent 40%); border-radius: 16px; box-shadow: 0 8px 24px rgba(16,19,23,.08); }
+
+/* === CTA buttons === */
+.btn-lg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.9375rem; /* just between text-sm and base */
+  line-height: 1.25rem;
+  padding: 0.625rem 1.25rem; /* equal height across styles */
+  transition: all 0.2s ease;
+}
+
+/* Copper gradient primary */
+.btn-cta {
+  color: #fff !important;
+  background: linear-gradient(135deg, var(--copper) 0%, var(--sandstone) 100%) !important;
+  border: none !important;
+  box-shadow: 0 8px 20px rgba(16,19,23,.12);
+}
+.btn-cta:hover { filter: brightness(.97); }
+
+/* Copper-outline secondary */
+.btn-ghost {
+  background: transparent !important;
+  border: 1.5px solid var(--copper) !important;
+  color: var(--ink) !important;
+}
+.btn-ghost:hover {
+  background: color-mix(in oklab, var(--copper), white 90%) !important;
+}
+
+/* Accessibility focus */
+.btn-cta:focus-visible,
+.btn-ghost:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--sandstone);
+}
+
+/* Small version for header CTA */
+.btn-sm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.375rem 0.875rem;
+}
+
+/* Re-use copper gradient */
+.btn-sm.btn-cta {
+  color: #fff !important;
+  background: linear-gradient(135deg, var(--copper) 0%, var(--sandstone) 100%) !important;
+  border: none !important;
+  box-shadow: 0 6px 16px rgba(16,19,23,.12);
+}
+.btn-sm.btn-cta:hover {
+  filter: brightness(.97);
+  transform: translateY(-1px);
+}
+
+/* Unify Signals post header background (kill any white cards) */
+.theme-kritanya .page-intro {
+  background: var(--bone) !important;        /* same as page bg */
+}
+
+.theme-kritanya .page-intro [class*="bg-white"] {
+  background: transparent !important;         /* no white slabs */
+}
+
+.theme-kritanya .page-intro *,
+.theme-kritanya .page-intro .k-card {
+  box-shadow: none !important;                 /* remove accidental card shadow */
+  border-color: transparent !important;        /* and borders */
+}
+
+/* Unify Signals post header background */
+.theme-kritanya article > header,
+.theme-kritanya article > header * {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+/* If any Tailwind bg-white slipped in anywhere inside the intro/header */
+.theme-kritanya .page-intro [class*="bg-white"],
+.theme-kritanya article [class*="bg-white"] {
+  background: transparent !important;
+}

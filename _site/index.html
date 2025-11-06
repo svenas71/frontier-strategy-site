@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="theme-kritanya">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -7,6 +7,7 @@
   <meta name="description" content="Frontier Strategy helps life science teams turn complex biology into clear strategy, partnerships, and measurable results.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body class="antialiased text-slate-800">
   <!-- Nav -->
@@ -20,7 +21,7 @@
        <a href="/about" class="hover:text-slate-900">About</a>
        <a href="/#contact" class="hover:underline">Contact</a>
      </nav>
-      <a href="/#contact" class="inline-block rounded-xl border px-3 py-1.5 text-sm hover:bg-slate-50">Let’s talk</a>
+      <a href="/#contact" class="btn-cta btn-sm">Let’s talk</a>
     </div>
   </header>
 
@@ -40,8 +41,8 @@
         I translate frontier biology into <span class="font-medium">commercial strategy, partnerships, and outcomes</span> — Sven Sewitz.
       </p>
       <div class="mt-7 flex gap-3">
-        <a href="#contact" class="rounded-xl bg-black text-white px-5 py-3 text-sm font-medium">Book an intro call</a>
-        <a href="#services" class="rounded-xl border px-5 py-3 text-sm">See services</a>
+        <a href="/#contact" class="btn-cta btn-lg">Book an intro call</a>
+        <a href="/services/" class="btn-ghost btn-lg">See services</a>
       </div>
       <p class="mt-4 text-xs text-slate-500">Based in Potsdam · Available Europe/UK · Remote-first</p>
     </div>
@@ -96,12 +97,14 @@
   
   <style>[x-cloak]{display:none!important}</style>
 
-  <div x-data="carouselResponsive({ total: 10 })" x-init="init()" class="mt-6 select-none">
+  <div x-data="carouselResponsive({ total: 11 })" x-init="init()" class="mt-6 select-none">
     <!-- viewport -->
     <div class="relative overflow-hidden rounded-2xl carousel-viewport">
       <!-- track -->
       <div class="track flex -mx-3 transition-transform duration-700 will-change-transform touch-pan-y" :style="translate">
         
+        
+          
         
           
         
@@ -137,6 +140,20 @@
         
 
         
+        
+          
+            <article class="w-full sm:w-1/2 md:w-1/3 shrink-0 px-3 py-4">
+              <div class="h-full rounded-2xl border bg-white p-6 shadow-sm">
+                <h3 class="font-semibold text-base">
+                  <a href="/signals/On_resonance/" class="hover:underline">On Resonance</a>
+                </h3>
+                
+                  <p class="mt-2 text-sm text-slate-600">Resonance: A New Vector for Our Civilisation</p>
+                
+                <p class="mt-4"><a class="text-sm underline" href="/signals/On_resonance/">Read →</a></p>
+              </div>
+            </article>
+          
         
           
             <article class="w-full sm:w-1/2 md:w-1/3 shrink-0 px-3 py-4">
@@ -484,7 +501,7 @@
   <div class="rounded-2xl border p-6">
     <h2 class="text-2xl md:text-3xl font-semibold">Contact</h2>
     <p class="mt-2 text-slate-600">Prefer email? I read everything.</p>
-    <a href="mailto:info@frontier-innovation.com" class="mt-4 inline-block rounded-xl bg-black text-white px-5 py-3 text-sm font-medium">info@frontier-innovation.com</a>
+    <a href="mailto:info@frontier-innovation.com" class="btn-cta btn-lg">info@frontier-innovation.com</a>
     <p class="mt-4 text-xs text-slate-500">Or propose times directly in your first email.</p>
   </div>
 </section>
@@ -500,6 +517,21 @@
       </div>
     </div>
   </footer>
+
+  <!-- Local theme toggle -->
+  <button id="themeToggle" class="fixed right-4 bottom-4 px-3 py-1.5 rounded-xl text-white"
+          style="background:#1C1E22;box-shadow:0 8px 24px rgba(16,19,23,.15);z-index:50">
+    Kritanya: Off
+  </button>
+  <script>
+    const btn = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    btn.addEventListener('click', () => {
+      root.classList.toggle('theme-kritanya');
+      btn.textContent = 'Kritanya: ' + (root.classList.contains('theme-kritanya') ? 'On' : 'Off');
+    });
+  </script>
+
   <script src="https://unpkg.com/alpinejs" defer></script>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>

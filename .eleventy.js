@@ -2,27 +2,22 @@ const MarkdownIt = require("markdown-it");
 const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
-  // Passthroughs
+  // --- Passthroughs ---
   eleventyConfig.addPassthroughCopy({ "public": "/" });
   eleventyConfig.addPassthroughCopy({ "src/images": "images" });
+  eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
 
-  // Markdown-it with global settings
+  // --- Markdown-it (global) ---
   const md = new MarkdownIt({
     html: true,
-    breaks: true,   // ← single line breaks respected everywhere
-    linkify: true
+    breaks: true,  // single line breaks respected
+    linkify: true,
   });
-
-  // Set markdown-it as the global Markdown library
   eleventyConfig.setLibrary("md", md);
 
-  // Shortcode: current year
+  // --- Shortcodes ---
   eleventyConfig.addShortcode("year", () => new Date().getFullYear());
-
-  // Shortcode: render Markdown inside .njk files
   eleventyConfig.addPairedShortcode("md", (content) => md.render(content));
-
-  // Shortcode: figure with caption
   eleventyConfig.addPairedShortcode("figure", (content, caption) => {
     return `
       <figure class="my-6">
@@ -31,8 +26,6 @@ module.exports = function(eleventyConfig) {
       </figure>
     `;
   });
-
-  // Shortcode: footnote block
   eleventyConfig.addPairedShortcode("footnote", (content) => {
     return `
       <div class="mt-2 ml-1 text-sm italic text-slate-600">
@@ -41,32 +34,42 @@ module.exports = function(eleventyConfig) {
     `;
   });
 
-  // Filter: readable date (e.g., "9 Sep 2025")
+  // --- Filters ---
   eleventyConfig.addFilter("readableDate", (value) => {
     const d = value instanceof Date ? value : new Date(value);
     return DateTime.fromJSDate(d, { zone: "utc" }).toFormat("d LLL yyyy");
   });
 
-  // In .eleventy.js
-   eleventyConfig.addCollection("orderedCases", (collection) => {
-  return collection
-    .getFilteredByTag("case")
-    .filter(item => item.data.eleventyExcludeFromCollections !== true && item.data.draft !== true)
-    .sort((a, b) => {
-      const A = Number.isFinite(+a.data.order) ? +a.data.order : 9999;
-      const B = Number.isFinite(+b.data.order) ? +b.data.order : 9999;
-      return A - B;
-    });
+  // take: first n items (fixes your error)
+  eleventyConfig.addFilter("take", (arr, n = 1) =>
+    Array.isArray(arr) ? arr.slice(0, n) : []
+  );
+
+  // --- Collections ---
+  eleventyConfig.addCollection("orderedCases", (collection) => {
+    return collection
+      .getFilteredByTag("case")
+      .filter(
+        (item) =>
+          item.data.eleventyExcludeFromCollections !== true &&
+          item.data.draft !== true
+      )
+      .sort((a, b) => {
+        const A = Number.isFinite(+a.data.order) ? +a.data.order : 9999;
+        const B = Number.isFinite(+b.data.order) ? +b.data.order : 9999;
+        return A - B;
+      });
   });
 
-  eleventyConfig.addFilter("take", (arr, n = 1) => (arr || []).slice(0, n));
-
-  // Eleventy directories / engines
+  // --- Directories & engines (single return!) ---
   return {
-    dir: { input: "src", includes: "_includes", output: "_site" },
+    dir: {
+      input: "src",
+      output: "_site",
+      includes: "_includes",
+      layouts: "_includes",
+    },
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
   };
-  
-  
 };
