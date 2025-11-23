@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: "On Resonance"
 date: 2025-11-06
-summary: "Resonance: A New Vector for Our Civilisation"
+summary: "The New Synthesis: From Divergence to Resonance"
 type: post
 tags: [signal]
 ---
@@ -96,7 +96,7 @@ In each case, the pattern is the same: resonance works with the grain of reality
 
 
 
-### Resonance as a Civilisational Metric
+### Resonance as a Comprehensive Metric
 
 Resonance could be our first common metric across domains - a shared vocabulary for sustainable progress.
 
@@ -125,7 +125,7 @@ We can measure resonance, if we choose to.
 Not through quarterly returns or citation counts, but through amplitude (how widely it’s chosen), duration (how long it endures), spread (how far it travels), reciprocity (how much others add), and generativity (what new things it enables).
 These are the metrics of a civilisation that wants to last.
 
-### The Call to Tune
+### A Call to our Future
 
 If growth, impact, and power are our civilization’s chords of tension, resonance is the note that can resolve them.
 

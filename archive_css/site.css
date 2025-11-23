@@ -1,0 +1,373 @@
+/* ==========================================================================
+   Frontier / Kritanya Luxury Grey Theme
+   ==========================================================================
+   Concept:
+   - All-grey, charcoal, luxury minimalism
+   - No colour hues, just greyscale
+   - Deep charcoals, soft highlights, subtle gradients
+   - Calm, high-end, strategic
+   ========================================================================== */
+
+:root {
+  /* Core greys */
+  --ink:         #171717; /* primary text, deep charcoal */
+  --slate:       #4B4D52; /* secondary / muted text */
+  --mist:        #D2D4D7; /* borders / dividers */
+  --bone:        #F5F5F4; /* soft grey canvas (not pure white) */
+
+  /* Dark surfaces */
+  --charcoal:    #111216; /* very dark background / hero */
+  --steel:       #23252A; /* dark card / panel surface */
+
+  /* Light surfaces */
+  --highlight:   #F9FAFA; /* card backgrounds, very light grey */
+
+  /* Accent-like greys (no colour) */
+  --edge-grey:   #3F4247; /* for links, outlines */
+  --ring-grey:   #A0A3A8; /* focus ring / outline */
+
+  /* Default site mapping (non-Kritanya, plain white shell) */
+  --bg:          #FFFFFF;
+  --card:        #FFFFFF;
+  --text:        var(--ink);
+  --muted:       var(--slate);
+  --ring:        var(--ring-grey);
+  --link:        var(--edge-grey);
+
+  /* Elevation */
+  --shadow-soft:    0 18px 45px rgba(0, 0, 0, 0.10);
+  --shadow-soft-sm: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* ==========================================================================
+   Kritanya Theme
+   ========================================================================== */
+/* Enable Kritanya by adding .theme-kritanya on <html> */
+.theme-kritanya {
+  --bg:    var(--bone);
+  --card:  var(--highlight);
+  --text:  var(--ink);
+  --muted: var(--slate);
+  --ring:  var(--ring-grey);
+  --link:  var(--edge-grey);
+}
+
+/* Optional dark variant: add both classes on <html> */
+.theme-kritanya.theme-dark {
+  --bg:    var(--charcoal);
+  --card:  var(--steel);
+  --text:  #EDEEF0;
+  --muted: #A7ABB3;
+  --ring:  #8F939B;
+  --link:  #D0D2D6;
+}
+
+/* ==========================================================================
+   Base mappings
+   ========================================================================== */
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  text-underline-offset: 0.18em;
+  transition:
+    color 0.18s ease,
+    text-decoration-color 0.18s ease,
+    background-color 0.18s ease;
+}
+
+a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--edge-grey);
+}
+
+hr,
+.border-t,
+.border-b,
+.border {
+  border-color: var(--mist) !important;
+}
+
+/* Generic card primitive */
+.k-card {
+  background: var(--card);
+  border-radius: 16px;
+  border: 1px solid var(--mist);
+  box-shadow: var(--shadow-soft);
+  padding: 1rem;
+}
+
+/* Slightly softer card in Kritanya theme */
+.theme-kritanya .k-card {
+  box-shadow: var(--shadow-soft-sm);
+}
+
+/* Accent ring utility */
+.k-ring {
+  box-shadow: 0 0 0 2px var(--ring) inset;
+}
+
+/* ==========================================================================
+   Neutral Gradients (replacing old copper/jade colors)
+   ========================================================================== */
+
+/* Former "copper" gradient — now deep charcoal gradient */
+.k-gradient-copper {
+  background: linear-gradient(135deg, #2B2D33 0%, #15161A 100%);
+  color: #FFFFFF;
+}
+
+/* Former "jade" gradient — now soft light grey sweep */
+.k-gradient-jade {
+  background: linear-gradient(
+    135deg,
+    #FCFCFC 0%,
+    var(--bone) 45%,
+    #E4E5E7 100%
+  );
+}
+
+/* ==========================================================================
+   Kritanya visual emphasis
+   ========================================================================== */
+
+/* Global surface + text */
+.theme-kritanya html,
+.theme-kritanya body {
+  background: var(--bone) !important;
+  color: var(--ink) !important;
+}
+
+/* Common Tailwind utilities you’re using */
+.theme-kritanya .bg-white {
+  background-color: var(--card) !important;
+}
+
+.theme-kritanya .text-slate-800 {
+  color: var(--ink) !important;
+}
+
+.theme-kritanya .text-slate-500 {
+  color: var(--muted) !important;
+}
+
+.theme-kritanya .border-b,
+.theme-kritanya .border-t,
+.theme-kritanya .border {
+  border-color: var(--mist) !important;
+}
+
+/* Header: subtle separation, almost flat */
+.theme-kritanya header {
+  background: color-mix(in oklab, var(--bone), #FFFFFF 10%) !important;
+  backdrop-filter: blur(10px);
+}
+
+.theme-kritanya header a:hover {
+  text-decoration-color: var(--edge-grey);
+}
+
+/* Primary link/CTA accent */
+.theme-kritanya a {
+  color: var(--link);
+}
+
+.theme-kritanya a:hover {
+  color: var(--ink);
+  text-decoration-color: var(--edge-grey);
+}
+
+/* Call-to-action style links (inline-block, rounded-xl, border) */
+.theme-kritanya a.inline-block.rounded-xl.border {
+  border-color: var(--edge-grey) !important;
+}
+
+.theme-kritanya a.inline-block.rounded-xl.border:hover {
+  background: color-mix(in oklab, #F3F3F3, #FFFFFF 70%) !important;
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+/* Hero utility */
+.k-hero {
+  border-radius: 1.25rem;
+  padding: 2rem;
+  color: #FFFFFF;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
+}
+
+/* Luxury charcoal gradient hero in Kritanya theme */
+.theme-kritanya .k-hero {
+  background: linear-gradient(
+    135deg,
+    #2B2D33 0%,
+    #191A1F 48%,
+    #111216 100%
+  );
+}
+
+/* Dark mode hero (slightly lighter text emphasis) */
+.theme-kritanya.theme-dark .k-hero {
+  background: linear-gradient(
+    135deg,
+    #34363D 0%,
+    #1A1B20 50%,
+    #050608 100%
+  );
+}
+
+/* ==========================================================================
+   Buttons (Luxury Grey)
+   ========================================================================== */
+
+.btn-lg,
+.btn-sm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-weight: 600;
+  line-height: 1.3;
+  transition:
+    transform 0.16s ease,
+    box-shadow 0.16s ease,
+    background-color 0.16s ease,
+    color 0.16s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Large button */
+.btn-lg {
+  font-size: 0.9375rem;
+  padding: 0.625rem 1.25rem;
+}
+
+/* Small header-sized button */
+.btn-sm {
+  font-size: 0.875rem;
+  padding: 0.375rem 0.875rem;
+}
+
+/* Ghost / outline button */
+.btn-ghost {
+  background: transparent !important;
+  border: 1.5px solid var(--edge-grey) !important;
+  color: var(--ink) !important;
+  box-shadow: none;
+}
+
+.btn-ghost:hover {
+  background: color-mix(in oklab, #ECEDEF, #FFFFFF 80%) !important;
+}
+
+
+/* ==========================================================================
+   Sunset CTA Buttons (Luxury Grey + Gentle Orange)
+   ========================================================================== */
+
+/* Large CTA */
+.btn-cta {
+  color: #FFFFFF !important;
+  background: linear-gradient(145deg, #F2A65A 0%, #F6C28B 100%) !important;
+  border: none !important;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
+  transition: all 0.2s ease;
+}
+
+.btn-cta:hover {
+  background: linear-gradient(145deg, #F1A058 0%, #F7C99A 100%) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+
+/* Small CTA (header version) */
+.btn-sm.btn-cta {
+  color: #FFFFFF !important;
+  background: linear-gradient(145deg, #F2A65A 0%, #F6C28B 100%) !important;
+  border: none !important;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.22);
+  transition: all 0.2s ease;
+}
+
+.btn-sm.btn-cta:hover {
+  background: linear-gradient(145deg, #F1A058 0%, #F7C99A 100%) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.27);
+}
+
+/* Focus states */
+.btn-cta:focus-visible,
+.btn-sm.btn-cta:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px #F8DCC1;
+}
+
+/* ==========================================================================
+   Signals / Post headers
+   ========================================================================== */
+
+/* Unify Signals post header background (no white slabs in Kritanya) */
+.theme-kritanya .page-intro {
+  background: var(--bone) !important;
+}
+
+.theme-kritanya .page-intro [class*="bg-white"] {
+  background: transparent !important;
+}
+
+.theme-kritanya .page-intro *,
+.theme-kritanya .page-intro .k-card {
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+/* Article headers: keep them flat and calm */
+.theme-kritanya article > header,
+.theme-kritanya article > header * {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+/* Kill stray white backgrounds inside article/intros */
+.theme-kritanya .page-intro [class*="bg-white"],
+.theme-kritanya article [class*="bg-white"] {
+  background: transparent !important;
+}
+
+/* ==========================================================================
+   Misc. refinements
+   ========================================================================== */
+
+/* Horizontal rule minimal look */
+hr {
+  border: 0;
+  border-top: 1px solid var(--mist);
+  margin: 2rem 0;
+}
+
+/* Muted text helper */
+.muted,
+.text-muted {
+  color: var(--muted);
+}
+
+/* Optional: subtle elevated surface */
+.k-surface {
+  background: var(--card);
+  border-radius: 20px;
+  border: 1px solid var(--mist);
+  box-shadow: var(--shadow-soft-sm);
+  padding: 1.5rem;
+}
