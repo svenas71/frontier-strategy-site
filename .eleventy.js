@@ -27,11 +27,11 @@ module.exports = function(eleventyConfig) {
     `;
   });
   eleventyConfig.addPairedShortcode("footnote", (content) => {
-    return `
-      <div class="mt-2 ml-1 text-sm italic text-slate-600">
-        ${content}
-      </div>
-    `;
+  return `
+    <div class="footnote">
+      ${content}
+    </div>
+  `;
   });
 
   // --- Filters ---

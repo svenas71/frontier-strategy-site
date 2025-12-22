@@ -152,3 +152,14 @@ hr, .border-t, .border-b, .border { border-color: var(--mist) !important; }
 .theme-kritanya article [class*="bg-white"] {
   background: transparent !important;
 }
+
+/* Footnotes */
+.footnote{
+  margin-top: 5.5rem;     /* ~mt-2 */
+  margin-left: .25rem;   /* ~ml-1 */
+  font-size: .800rem;    /* text-sm */
+  font-style: italic;
+  color: var(--muted);   /* matches your theme */
+}
+
+
