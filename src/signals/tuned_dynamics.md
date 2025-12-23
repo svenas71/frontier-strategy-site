@@ -30,5 +30,6 @@ For some this might sound too generic or obvious. I disagree. For me, the key in
 
 
 {% footnote %}
-[McClintock, B. Cytogenetic studies of maize and Neurospora: The mutable Ds locus in maize. Continuation of studies of the chromosomes of Neurospora crassa. Carnegie Institution of Washington Year Book, 46, 146–152. (1947)](http://resource.nlm.nih.gov/101584613X29)
+McClintock, B.
+Cytogenetic studies of maize and Neurospora: The mutable Ds locus in maize. Continuation of studies of the chromosomes of Neurospora crassa. [Carnegie Institution of Washington Year Book, 46, 146–152. (1947)](http://resource.nlm.nih.gov/101584613X29) 
 {% endfootnote %}
