@@ -1,8 +1,8 @@
 ---
 layout: layouts/post.njk
-title: "What LLMs will teach us about the Mind"
+title: "A Toolbox for Cognition"
 date: 2024-03-12
-summary: "Beyond chat: LLMs are our first toolbox for cognition"
+summary: "Beyond chat: LLMs are a toolbox to teach us about the Mind"
 type: post
 tags: [signal]
 ---
