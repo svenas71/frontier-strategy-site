@@ -35,7 +35,7 @@ This is where Crick’s insistence on candour remains relevant. Agreeing with hi
 
 **Max Delbrück**, a contemporary of Crick, was famously sceptical of explanations that stabilised too quickly<sup><a href="#ref-delbruck">1</a></sup>. His instinct remains instructive as genome architecture moves from exploration to application: description is not the endpoint, but the starting point for understanding how biological systems *work*.
 
-Answering that question will elevate the value of mapping, as it will complete its trajectory — carrying architectural insight across the bridge from description to control, and from understanding to intervention.
+Answering that question will elevate the value of mapping, as it will complete its trajectory: carrying architectural insight across the bridge from description to control, and from understanding to intervention.
 
 {% footnote %}
 ### References
