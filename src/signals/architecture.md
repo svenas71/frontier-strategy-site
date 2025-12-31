@@ -27,7 +27,7 @@ The pace of methodological innovation was such that our weekly seminars were oft
 
 **The field stabilised at the descriptive layer faster than its control layer.**
 
-By now, more than a decade and a half after the first whole-genome 3D structure of a eukaryote was published, the field has *exceedingly* succeeded in establishing genome architecture as a real and consequential structure of importance. We have identified disease-linked enhancers, opening new avenues for target discovery. We have followed structural changes during development, helping to pinpoint regions essential for normal growth that also play roles in dysregulation and cancer.
+By now, more than a decade and a half after the first whole-genome 3D structure of a eukaryote was published, the field has *convincingly* succeeded in establishing genome architecture as a real and consequential structure of importance. We have identified disease-linked enhancers, opening new avenues for target discovery. We have followed structural changes during development, helping to pinpoint regions essential for normal growth that also play roles in dysregulation and cancer.
 
 The questions that follow are no longer whether genome architecture matters — that much has been settled. The challenge now, and the one that will define the field’s impact on medicine, is to understand **how these architectural states are regulated, tuned, and altered by molecular mechanisms**.
 
