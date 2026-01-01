@@ -89,10 +89,7 @@ Jesus College, Cambridge, College Research Associate 
 Oxford University Graduate Studentship
 
 
-
-## Selected Publications
-
-- **Javierre, B.M., Sewitz, S., Fraser, P., et al.** (2016). *Lineage-Specific Genome Architecture Links Enhancers and Non-coding Disease Variants to Target Gene Promoters*. **Cell** 167(5): 1369–1384. [(full text)](https://www.cell.com/cell/fulltext/S0092-8674(16)31322-8)
+## Publications
 
 
 ### 3D Genome Organisation
