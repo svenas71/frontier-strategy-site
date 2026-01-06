@@ -33,7 +33,7 @@ Project Grant Evaluations for the European Research Executive Agency (REA)
 
 ### Goals & Motivation
 
-Providing impactful solutions for improved patient health 
+Providing impactful solutions for the advancement of science and improved health 
 Delivering increased business value by applying my skills and expertise gained in over 20 years at world class institutions and cutting edge scale ups to develop the next generation of health solutions
 
 
