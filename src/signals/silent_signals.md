@@ -47,8 +47,7 @@ For indications where traditional diagnostic markers struggle because the condit
 
 
 ### The core claim
-The microbiome is not a shortcut to simple health metrics — but it may be one of the few biological layers that can meaningfully describe weak, contextual, and multi-causal states of health over time.
-This reframes its value entirely. The question is no longer whether the microbiome can deliver crisp binary diagnoses, but whether it can help us characterise biological states in situations where traditional markers fail.
+The microbiome is not a shortcut to simple health metrics — but it may be one of the few biological layers that can meaningfully describe weak, contextual, and multi-causal states of health over time. This reframes its value entirely. The question is no longer whether the microbiome can deliver crisp binary diagnoses, but whether it can help us characterise biological states in situations where traditional markers fail.
 
 
 ### Closing
