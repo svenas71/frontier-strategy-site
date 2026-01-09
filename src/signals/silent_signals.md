@@ -51,8 +51,7 @@ The microbiome is not a shortcut to simple health metrics — but it may be one 
 
 
 ### Closing
-The microbiome will not rescue us from biological complexity. But it may help us live with it more honestly.
-Used carefully — functionally, longitudinally, and in context — it offers a rare window into biological states that are otherwise difficult to see. Not because it simplifies health, but because it accepts that health is, by nature, contextual, path dependent and multi-causal.
+The microbiome will not rescue us from biological complexity. But it may help us live with it more honestly. Used carefully — functionally, longitudinally, and in context — the microbiome offers a rare window into biological states that are otherwise difficult to see. Not because it simplifies health, but because it accepts that health is, by nature, contextual, path dependent and multi-causal.
 
 
 {% footnote %}
