@@ -18,7 +18,7 @@ Against this backdrop, the human gut microbiome has been proposed as a promising
 ### From taxa to function
 One important shift in microbiome science has been the move away from individual taxa and toward functional capacity. Rather than asking which microbes are present, the more relevant question becomes what metabolic and biochemical functions the community can perform. Function, not identity, is the level at which biology tends to act.
 
-Recent work by Frioux et al.<sup><a href="#ref-frioux">1</a></sup> from the Hildebrand group in Norwich has helped formalise this perspective, framing the microbiome as a distributed functional system rather than a collection of named organisms. This matters because taxonomic composition is highly variable between individuals, whereas functional outputs can be more conserved across different community configurations.
+Recent work by Frioux et al.<sup><a href="#ref-frioux">1</a></sup> from the Hildebrand group in Norwich has helped formalise this perspective: defining enterosignatures that frame the microbiome as a distributed functional system rather than a collection of named organisms. This matters because taxonomic composition is highly variable between individuals, whereas functional outputs can be more conserved across different community configurations.
 
 Crucially, functional microbiome profiles are also tuneable: influenced by diet, activity, medication, and other interventions. In principle, this makes them compatible with longitudinal tracking and predictive modelling — two prerequisites for any meaningful preventive application.
 
