@@ -63,7 +63,7 @@ The microbiome will not rescue us from biological complexity. But it may help us
 ### References
 1. <a id="ref-frioux"></a> [Frioux, C. et al.](https://www.cell.com/cell-host-microbe/fulltext/S1931-3128(23)00217-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1931312823002172%3Fshowall%3Dtrue),  Enterosignatures define common bacterial guilds in the human gut microbiome. Cell Host Microbe 31, 1111-1125.e6 (2023)
 
-2. <a id="ref-method"></a> [Method:](https://pypi.org/project/cvanmf/) An implementation of bicrossvalidation for Non-negative Matrix Factorisation (NMF) rank selection, along with methods for analysis and visualisation of NMF decomposition
+2. <a id="ref-method"></a> [Method:](https://pypi.org/project/cvanmf/) An implementation of bicrossvalidation for Non-negative Matrix Factorisation (NMF) rank selection, along with methods for analysis and visualisation of NMF decomposition (cvanmf)
   
 3. <a id="ref-bücking"></a> [Bücking, R. et al.](https://www.biorxiv.org/content/10.64898/2025.12.11.693638v1), Global analysis of infant gut microbiota revealed distinctive maturation dynamics across lifestyles. bioRxiv (2025)
   
