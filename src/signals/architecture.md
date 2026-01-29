@@ -32,7 +32,7 @@ By now, more than a decade and a half after the first whole-genome 3D structure 
 >Genome architecture is now established as an integral part of gene regulation and important for both development and the understanding of disease 
 – **Stefan Schoenfelder, CSO of Enhanced Genomics**
 
-The questions that follow are no longer whether genome architecture matters — that much has been settled. The challenge now, and the one that will define the field’s impact on medicine, is to understand **how these architectural states are regulated, tuned, and altered by molecular mechanisms**.
+The questions that follow are no longer whether genome architecture matters — that much has been settled. The challenge now, and the one that will define the field’s impact on medicine, is to understand **how these architectural states are regulated, tuned, and altered by molecular mechanisms**. Ongoing work in this space is truly intriguing<sup><a href="#ref-murphy">8</a></sup>
 
 This is where Crick’s insistence on candour remains relevant. Agreeing with him does not mean rejecting collaboration or collegiality; it means accepting that difficult questions must be asked before explanations become too comfortable. Scientific progress depends on that friction.
 
@@ -47,7 +47,8 @@ Answering that question will elevate the value of mapping, as it will complete i
 3. <a id="ref-duan"></a> Duan, Z. et al. A three-dimensional model of the yeast genome. Nature 465, 363–367 (2010)
 4. <a id="ref-schoenfelder"></a> Schoenfelder, S. et al. The pluripotent regulatory circuitry connecting promoters to their long-range interacting elements. Genome Res. 25, 582–597 (2015)
 5. <a id="ref-javierre"></a> Javierre, B. M. et al. Lineage-Specific Genome Architecture Links Enhancers and Non-coding Disease Variants to Target Gene Promoters. Cell 167, 1369–1384 (2016)
-6. <a id="ref-pombo"></a> Willemin, A., Szabó, D. & Pombo, A. Epigenetic regulatory layers in the 3D nucleus. Mol. Cell 84, 415–428 (2024)
-7. <a id="ref-pombo2"></a> Zea-Redondo, L. & Pombo, A. Mechanisms of enhancer function in neuronal systems in health and disease. Curr. Opin. Syst. Biol. 32–33, 100443 (2023)
+6. <a id="ref-pombo"></a> Zea-Redondo, L. & Pombo, A. Mechanisms of enhancer function in neuronal systems in health and disease. Curr. Opin. Syst. Biol. 32–33, 100443 (2023)
+7. <a id="ref-pombo2"></a> Willemin, A., Szabó, D. & Pombo, A. Epigenetic regulatory layers in the 3D nucleus. Mol. Cell 84, 415–428 (2024)
+8. <a id="ref-murphy"></a> Murphy, S. E. & Boettiger, A. N. Polycomb repression of Hox genes involves spatial feedback but not domain compaction or phase transition. Nat. Genet. 56, 493–504 (2024)
 {% endfootnote %}
 
