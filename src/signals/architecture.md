@@ -32,7 +32,7 @@ By now, more than a decade and a half after the first whole-genome 3D structure 
 >Genome architecture is now established as an integral part of gene regulation and important for both development and the understanding of disease 
 – **Stefan Schoenfelder, CSO of Enhanced Genomics**
 
-The questions that follow are no longer whether genome architecture matters — that much has been settled. The challenge now, and the one that will define the field’s impact on medicine, is to understand **how these architectural states are regulated, tuned, and altered by molecular mechanisms**. Ongoing work in this space is truly intriguing<sup><a href="#ref-murphy">8</a></sup>
+The questions that follow are no longer whether genome architecture matters — that much has been settled. The challenge now, and the one that will define the field’s impact on medicine, is to understand **how these architectural states are regulated, tuned, and altered by molecular mechanisms**. Ongoing work in this space is truly intriguing<sup><a href="#ref-murphy">8</a></sup>.
 
 This is where Crick’s insistence on candour remains relevant. Agreeing with him does not mean rejecting collaboration or collegiality; it means accepting that difficult questions must be asked before explanations become too comfortable. Scientific progress depends on that friction.
 
