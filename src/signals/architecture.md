@@ -27,7 +27,7 @@ The pace of methodological innovation was such that our weekly seminars were oft
 
 **The field stabilised at the descriptive layer faster than its control layer.**
 
-By now, more than a decade and a half after the first whole-genome 3D structure of a eukaryote was published, the field has *convincingly succeeded* in establishing genome architecture as a real and consequential structure of importance. We have identified disease-linked enhancers, opening new avenues for target discovery. We have followed structural changes during development, helping to pinpoint regions essential for normal growth that also play roles in dysregulation and cancer and identified regulatory regions altered in neuronal diseases.
+By now, more than a decade and a half after the first whole-genome 3D structure of a eukaryote was published, the field has *convincingly succeeded* in establishing genome architecture as a real and consequential structure of importance. We have identified disease-linked enhancers, opening new avenues for target discovery. We have followed structural changes during development, helping to pinpoint regions essential for normal growth that also play roles in dysregulation and cancer and identified regulatory regions altered in neuronal diseases<sup><a href="#ref-pombo">4</a></sup>.
 
 >Genome architecture is now established as an integral part of gene regulation and important for both development and the understanding of disease 
 – **Stefan Schoenfelder, CSO of Enhanced Genomics**
@@ -45,5 +45,6 @@ Answering that question will elevate the value of mapping, as it will complete i
 1. <a id="ref-delbruck"></a> Judson, H. F. *The Eighth Day of Creation*. Simon & Schuster (1979)
 2. <a id="ref-dekker"></a> Dekker, J., Rippe, K., Dekker, M. & Kleckner, N. Capturing chromosome conformation. Science 295, 1306–1311 (2002)
 3. <a id="ref-duan"></a> Duan, Z. et al. A three-dimensional model of the yeast genome. Nature 465, 363–367 (2010)
+4. <a id="ref-pombo"></a> Willemin, A., Szabó, D. & Pombo, A. Epigenetic regulatory layers in the 3D nucleus. Mol. Cell 84, 415–428 (2024)
 {% endfootnote %}
 
