@@ -27,7 +27,7 @@ The pace of methodological innovation was such that our weekly seminars were oft
 
 **The field stabilised at the descriptive layer faster than its control layer.**
 
-By now, more than a decade and a half after the first whole-genome 3D structure of a eukaryote was published, the field has *convincingly succeeded* in establishing genome architecture as a real and consequential structure of importance. We have identified disease-linked enhancers, opening new avenues for target discovery. We have followed structural changes during development, helping to pinpoint regions essential for normal growth that also play roles in dysregulation and cancer and identified regulatory regions altered in neuronal diseases<sup><a href="#ref-pombo">4</a></sup>.
+By now, more than a decade and a half after the first whole-genome 3D structure of a eukaryote was published, the field has *convincingly succeeded* in establishing genome architecture as a real and consequential structure of importance. We have identified disease-linked enhancers<sup><a href="#ref-schoenfelder">4</a></sup><sup>,</sup><sup><a href="#ref-javierre">5</a></sup>, opening new avenues for target discovery. We have followed structural changes during development, helping to pinpoint regions essential for normal growth that also play roles in dysregulation and cancer and identified regulatory regions altered in neuronal diseases<sup><a href="#ref-pombo">6</a></sup>.
 
 >Genome architecture is now established as an integral part of gene regulation and important for both development and the understanding of disease 
 – **Stefan Schoenfelder, CSO of Enhanced Genomics**
@@ -45,6 +45,8 @@ Answering that question will elevate the value of mapping, as it will complete i
 1. <a id="ref-delbruck"></a> Judson, H. F. *The Eighth Day of Creation*. Simon & Schuster (1979)
 2. <a id="ref-dekker"></a> Dekker, J., Rippe, K., Dekker, M. & Kleckner, N. Capturing chromosome conformation. Science 295, 1306–1311 (2002)
 3. <a id="ref-duan"></a> Duan, Z. et al. A three-dimensional model of the yeast genome. Nature 465, 363–367 (2010)
-4. <a id="ref-pombo"></a> Willemin, A., Szabó, D. & Pombo, A. Epigenetic regulatory layers in the 3D nucleus. Mol. Cell 84, 415–428 (2024)
+4. <a id="ref-schoenfelder"></a> Schoenfelder, S. et al. The pluripotent regulatory circuitry connecting promoters to their long-range interacting elements. Genome Res. 25, 582–597 (2015)
+5. <a id="ref-javierre"></a> Javierre, B. M. et al. Lineage-Specific Genome Architecture Links Enhancers and Non-coding Disease Variants to Target Gene Promoters. Cell 167, 1369–1384 (2016)
+6. <a id="ref-pombo"></a> Willemin, A., Szabó, D. & Pombo, A. Epigenetic regulatory layers in the 3D nucleus. Mol. Cell 84, 415–428 (2024)
 {% endfootnote %}
 
