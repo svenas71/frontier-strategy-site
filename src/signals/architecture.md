@@ -29,6 +29,9 @@ The pace of methodological innovation was such that our weekly seminars were oft
 
 By now, more than a decade and a half after the first whole-genome 3D structure of a eukaryote was published, the field has *convincingly succeeded* in establishing genome architecture as a real and consequential structure of importance. We have identified disease-linked enhancers, opening new avenues for target discovery. We have followed structural changes during development, helping to pinpoint regions essential for normal growth that also play roles in dysregulation and cancer and identified regulatory regions altered in neuronal diseases.
 
+>Genome architecture is now established as an integral part of gene regulation and important for both development and the understanding of disease 
+– **Stefan Schoenfelder, CSO of Enhanced Genomics**
+
 The questions that follow are no longer whether genome architecture matters — that much has been settled. The challenge now, and the one that will define the field’s impact on medicine, is to understand **how these architectural states are regulated, tuned, and altered by molecular mechanisms**.
 
 This is where Crick’s insistence on candour remains relevant. Agreeing with him does not mean rejecting collaboration or collegiality; it means accepting that difficult questions must be asked before explanations become too comfortable. Scientific progress depends on that friction.
