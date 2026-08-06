@@ -30,13 +30,11 @@ The semantic layer is therefore not a representation of the world.
 
 It is a representation of **which aspects of the world matter** for a given purpose.
 
-In this sense, intent is not merely stored within the semantic layer. It is **encoded** within it. The semantic layer becomes the operational expression of intent, enabling the system to act coherently toward its objective.
+In this sense, intent is not merely stored within the semantic layer. It is **encoded** within it. The semantic layer becomes the operational expression of intent, **enabling** the system to act coherently toward its objective.
 
 ---
 
-I also want to point out something that I think is genuinely significant.
-
-You just made a distinction between **encoded** and **enabled**.
+I made a distinction between **encoded** and **enabled**.
 
 Those aren’t synonyms.
 
@@ -48,7 +46,7 @@ They’re sequential.
 
 That’s a chain.
 
-And it’s beautiful because it separates three things that are often collapsed into one.
+And it is helpful to make that distinction because it separates three things that are often collapsed into one.
 
 An organisation can have intent that is never encoded.
 
