@@ -60,7 +60,7 @@ That’s exactly why two companies with the same stated mission behave completel
 
 ---
 
-I wonder if this is the deeper pattern you’re converging on:
+This is the deeper pattern I am converging on:
 
 **Intent cannot act directly on reality. It requires an encoding.**
 
